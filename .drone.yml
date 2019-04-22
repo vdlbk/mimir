@@ -1,0 +1,38 @@
+kind: pipeline
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: test
+    image: golang
+    commands:
+      - go test -race -v ./...
+---
+kind: pipeline
+name: go-1-11
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: test
+    image: golang:1.11
+    commands:
+      - go test -race -v ./...
+---
+kind: pipeline
+name: go-1-10
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: test
+    image: golang:1.10
+    commands:
+      - go test -race -v ./...
