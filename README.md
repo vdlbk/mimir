@@ -4,19 +4,27 @@
 
 **Mimir** is a lightweight library that exposes some functions to validate some banking informations.
 
-## Validation
+### Disclaimer
 
-As the project just started, you can just validate an IBAN.    
+This library is still in development, so it might be possible that some methods change over time. 
+
+## Methods available
+
+As the project just started, it is quite poor in method.    
 Stay tuned for updates !
+
++  Validate an IBAN (every country supported)
++  Compute check digits from a valid IBAN
 
 ## Use
 
-### Install
+### Get
 ```bash
 $ go get -u github.com/vdlbk/mimir
 ```
 
-### Example : Validate an IBAN
+### Examples
+#### Validate an IBAN
 ```go
 package main
 
@@ -31,7 +39,7 @@ func main(){
 	ok, _ := mimir.IsIBANValid(IBAN)
 	fmt.Println(ok) // true
 	
-	badIBAN := "FR1420041010050500013M02606"
+	badIBAN := "FR1420041010050500013M02605"
     	
     ok, _ = mimir.IsIBANValid(badIBAN)
     fmt.Println(ok) // false
