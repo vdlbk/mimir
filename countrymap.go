@@ -3,87 +3,87 @@ package mimir
 var (
 	// countriesConfiguration holds the mapping between the country code and the country specifications
 	countriesConfiguration = map[string]configuration{
-		AD.String(): andorraConfiguration,
-		AE.String(): unitedArabEmiratesConfiguration,
-		AL.String(): albaniaConfiguration,
-		AT.String(): austriaConfiguration,
-		AZ.String(): azerbaijanConfiguration,
-		BA.String(): bosniaHerzegovinaConfiguration,
-		BE.String(): belgiumConfiguration,
-		BG.String(): bulgariaConfiguration,
-		BH.String(): bahrainConfiguration,
-		BR.String(): brazilConfiguration,
-		BY.String(): republicBelarusConfiguration,
-		CH.String(): switzerlandConfiguration,
-		CR.String(): costaRicaConfiguration,
-		CY.String(): cyprusConfiguration,
-		CZ.String(): czechRepublicConfiguration,
-		DE.String(): germanyConfiguration,
-		DK.String(): denmarkConfiguration,
-		DO.String(): dominicanRepublicConfiguration,
-		EE.String(): estoniaConfiguration,
-		ES.String(): spainConfiguration,
-		FI.String(): finlandConfiguration,
-		FO.String(): faroeIslandsConfiguration,
-		FR.String(): franceConfiguration,
-		GB.String(): unitedKingdomConfiguration,
-		GE.String(): georgiaConfiguration,
-		GI.String(): gibraltarConfiguration,
-		GL.String(): greenlandConfiguration,
-		GR.String(): greeceConfiguration,
-		GT.String(): guatemalaConfiguration,
-		HR.String(): croatiaConfiguration,
-		HU.String(): hungaryConfiguration,
-		IE.String(): irelandConfiguration,
-		IL.String(): israelConfiguration,
-		IQ.String(): iraqConfiguration,
-		IS.String(): icelandConfiguration,
-		IT.String(): italyConfiguration,
-		JO.String(): jordanConfiguration,
-		KW.String(): kuwaitConfiguration,
-		KZ.String(): kazakhstanConfiguration,
-		LB.String(): lebanonConfiguration,
-		LC.String(): saintLuciaConfiguration,
-		LI.String(): liechtensteinConfiguration,
-		LT.String(): lithuaniaConfiguration,
-		LU.String(): luxembourgConfiguration,
-		LV.String(): latviaConfiguration,
-		MC.String(): monacoConfiguration,
-		MD.String(): moldovaConfiguration,
-		ME.String(): montenegroConfiguration,
-		MK.String(): macedoniaConfiguration,
-		MR.String(): mauritaniaConfiguration,
-		MT.String(): maltaConfiguration,
-		MU.String(): mauritiusConfiguration,
-		NL.String(): netherlandsConfiguration,
-		NO.String(): norwayConfiguration,
-		PK.String(): pakistanConfiguration,
-		PL.String(): polandConfiguration,
-		PS.String(): palestineConfiguration,
-		PT.String(): portugalConfiguration,
-		QA.String(): qatarConfiguration,
-		RO.String(): romaniaConfiguration,
-		RS.String(): serbiaConfiguration,
-		SA.String(): saudiArabiaConfiguration,
-		SC.String(): seychellesConfiguration,
-		SE.String(): swedenConfiguration,
-		SI.String(): sloveniaConfiguration,
-		SK.String(): slovakiaConfiguration,
-		SM.String(): sanMarinoConfiguration,
-		ST.String(): saoTomePrincipeConfiguration,
-		SV.String(): elSalvadorConfiguration,
-		TL.String(): timorLesteConfiguration,
-		TN.String(): tunisiaConfiguration,
-		TR.String(): turkeyConfiguration,
-		UA.String(): ukraineConfiguration,
-		VA.String(): vaticanCityStateConfiguration,
-		VG.String(): virginIslandsConfiguration,
-		XK.String(): kosovoConfiguration,
+		ad.String(): andorraConfiguration,
+		ae.String(): unitedArabEmiratesConfiguration,
+		al.String(): albaniaConfiguration,
+		at.String(): austriaConfiguration,
+		az.String(): azerbaijanConfiguration,
+		ba.String(): bosniaHerzegovinaConfiguration,
+		be.String(): belgiumConfiguration,
+		bg.String(): bulgariaConfiguration,
+		bh.String(): bahrainConfiguration,
+		br.String(): brazilConfiguration,
+		by.String(): republicBelarusConfiguration,
+		ch.String(): switzerlandConfiguration,
+		cr.String(): costaRicaConfiguration,
+		cy.String(): cyprusConfiguration,
+		cz.String(): czechRepublicConfiguration,
+		de.String(): germanyConfiguration,
+		dk.String(): denmarkConfiguration,
+		do.String(): dominicanRepublicConfiguration,
+		ee.String(): estoniaConfiguration,
+		es.String(): spainConfiguration,
+		fi.String(): finlandConfiguration,
+		fo.String(): faroeIslandsConfiguration,
+		fr.String(): franceConfiguration,
+		gb.String(): unitedKingdomConfiguration,
+		ge.String(): georgiaConfiguration,
+		gi.String(): gibraltarConfiguration,
+		gl.String(): greenlandConfiguration,
+		gr.String(): greeceConfiguration,
+		gt.String(): guatemalaConfiguration,
+		hr.String(): croatiaConfiguration,
+		hu.String(): hungaryConfiguration,
+		ie.String(): irelandConfiguration,
+		il.String(): israelConfiguration,
+		iq.String(): iraqConfiguration,
+		is.String(): icelandConfiguration,
+		it.String(): italyConfiguration,
+		jo.String(): jordanConfiguration,
+		kw.String(): kuwaitConfiguration,
+		kz.String(): kazakhstanConfiguration,
+		lb.String(): lebanonConfiguration,
+		lc.String(): saintLuciaConfiguration,
+		li.String(): liechtensteinConfiguration,
+		lt.String(): lithuaniaConfiguration,
+		lu.String(): luxembourgConfiguration,
+		lv.String(): latviaConfiguration,
+		mc.String(): monacoConfiguration,
+		md.String(): moldovaConfiguration,
+		me.String(): montenegroConfiguration,
+		mk.String(): macedoniaConfiguration,
+		mr.String(): mauritaniaConfiguration,
+		mt.String(): maltaConfiguration,
+		mu.String(): mauritiusConfiguration,
+		nl.String(): netherlandsConfiguration,
+		no.String(): norwayConfiguration,
+		pk.String(): pakistanConfiguration,
+		pl.String(): polandConfiguration,
+		ps.String(): palestineConfiguration,
+		pt.String(): portugalConfiguration,
+		qa.String(): qatarConfiguration,
+		ro.String(): romaniaConfiguration,
+		rs.String(): serbiaConfiguration,
+		sa.String(): saudiArabiaConfiguration,
+		sc.String(): seychellesConfiguration,
+		se.String(): swedenConfiguration,
+		si.String(): sloveniaConfiguration,
+		sk.String(): slovakiaConfiguration,
+		sm.String(): sanMarinoConfiguration,
+		st.String(): saoTomePrincipeConfiguration,
+		sv.String(): elSalvadorConfiguration,
+		tl.String(): timorLesteConfiguration,
+		tn.String(): tunisiaConfiguration,
+		tr.String(): turkeyConfiguration,
+		ua.String(): ukraineConfiguration,
+		va.String(): vaticanCityStateConfiguration,
+		vg.String(): virginIslandsConfiguration,
+		xk.String(): kosovoConfiguration,
 	}
 
 	andorraConfiguration = configuration{
 		CountryName:             "Andorra",
-		CountryCode:             AD,
+		CountryCode:             ad,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -101,7 +101,7 @@ var (
 
 	unitedArabEmiratesConfiguration = configuration{
 		CountryName:             "The United Arab Emirates",
-		CountryCode:             AE,
+		CountryCode:             ae,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -119,7 +119,7 @@ var (
 
 	albaniaConfiguration = configuration{
 		CountryName:             "Albania",
-		CountryCode:             AL,
+		CountryCode:             al,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -137,7 +137,7 @@ var (
 
 	austriaConfiguration = configuration{
 		CountryName:             "Austria",
-		CountryCode:             AT,
+		CountryCode:             at,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -155,7 +155,7 @@ var (
 
 	azerbaijanConfiguration = configuration{
 		CountryName:             "Azerbaijan",
-		CountryCode:             AZ,
+		CountryCode:             az,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -173,7 +173,7 @@ var (
 
 	bosniaHerzegovinaConfiguration = configuration{
 		CountryName:             "Bosnia and Herzegovina",
-		CountryCode:             BA,
+		CountryCode:             ba,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -191,7 +191,7 @@ var (
 
 	belgiumConfiguration = configuration{
 		CountryName:             "Belgium",
-		CountryCode:             BE,
+		CountryCode:             be,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -209,7 +209,7 @@ var (
 
 	bulgariaConfiguration = configuration{
 		CountryName:             "Bulgaria",
-		CountryCode:             BG,
+		CountryCode:             bg,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -227,7 +227,7 @@ var (
 
 	bahrainConfiguration = configuration{
 		CountryName:             "Bahrain",
-		CountryCode:             BH,
+		CountryCode:             bh,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -245,7 +245,7 @@ var (
 
 	brazilConfiguration = configuration{
 		CountryName:             "Brazil",
-		CountryCode:             BR,
+		CountryCode:             br,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -263,7 +263,7 @@ var (
 
 	republicBelarusConfiguration = configuration{
 		CountryName:             "Republic of Belarus",
-		CountryCode:             BY,
+		CountryCode:             by,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -281,7 +281,7 @@ var (
 
 	switzerlandConfiguration = configuration{
 		CountryName:             "Switzerland",
-		CountryCode:             CH,
+		CountryCode:             ch,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -299,7 +299,7 @@ var (
 
 	costaRicaConfiguration = configuration{
 		CountryName:             "Costa Rica",
-		CountryCode:             CR,
+		CountryCode:             cr,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -317,7 +317,7 @@ var (
 
 	cyprusConfiguration = configuration{
 		CountryName:             "Cyprus",
-		CountryCode:             CY,
+		CountryCode:             cy,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -335,7 +335,7 @@ var (
 
 	czechRepublicConfiguration = configuration{
 		CountryName:             "Czech Republic",
-		CountryCode:             CZ,
+		CountryCode:             cz,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -353,7 +353,7 @@ var (
 
 	germanyConfiguration = configuration{
 		CountryName:             "Germany",
-		CountryCode:             DE,
+		CountryCode:             de,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -371,7 +371,7 @@ var (
 
 	denmarkConfiguration = configuration{
 		CountryName:             "Denmark",
-		CountryCode:             DK,
+		CountryCode:             dk,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -389,7 +389,7 @@ var (
 
 	dominicanRepublicConfiguration = configuration{
 		CountryName:             "Dominican Republic",
-		CountryCode:             DO,
+		CountryCode:             do,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -407,7 +407,7 @@ var (
 
 	estoniaConfiguration = configuration{
 		CountryName:             "Estonia",
-		CountryCode:             EE,
+		CountryCode:             ee,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -425,7 +425,7 @@ var (
 
 	spainConfiguration = configuration{
 		CountryName:             "Spain",
-		CountryCode:             ES,
+		CountryCode:             es,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -443,10 +443,10 @@ var (
 
 	finlandConfiguration = configuration{
 		CountryName:             "Finland",
-		CountryCode:             FI,
-		IncludedCountryCode:     []countryCode{AX},
+		CountryCode:             fi,
+		IncludedCountryCode:     []countryCode{ax},
 		IsSEPAAvailable:         true,
-		SEPAIncludedCountryCode: []countryCode{AX},
+		SEPAIncludedCountryCode: []countryCode{ax},
 		AccountNumberExample:    "1234 5600 0007 85",
 		IBANDefinition: definition{
 			Length:      18,
@@ -461,7 +461,7 @@ var (
 
 	faroeIslandsConfiguration = configuration{
 		CountryName:             "Faroe Islands",
-		CountryCode:             FO,
+		CountryCode:             fo,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -479,10 +479,10 @@ var (
 
 	franceConfiguration = configuration{
 		CountryName:             "France",
-		CountryCode:             FR,
-		IncludedCountryCode:     []countryCode{GF, GP, MQ, RE, PF, TF, YT, NC, BL, MF, PM, WF},
+		CountryCode:             fr,
+		IncludedCountryCode:     []countryCode{gf, gp, mq, re, pf, tf, yt, nc, bl, mf, pm, wf},
 		IsSEPAAvailable:         true,
-		SEPAIncludedCountryCode: []countryCode{GF, GP, MQ, YT, RE, PM, BL, MF},
+		SEPAIncludedCountryCode: []countryCode{gf, gp, mq, yt, re, pm, bl, mf},
 		AccountNumberExample:    "20041 01005 0500013M026 06",
 		IBANDefinition: definition{
 			Length:      27,
@@ -497,8 +497,8 @@ var (
 
 	unitedKingdomConfiguration = configuration{
 		CountryName:             "United Kingdom",
-		CountryCode:             GB,
-		IncludedCountryCode:     []countryCode{IM, JE, GG},
+		CountryCode:             gb,
+		IncludedCountryCode:     []countryCode{im, je, gg},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
 		AccountNumberExample:    "60-16-13 31926819",
@@ -515,7 +515,7 @@ var (
 
 	georgiaConfiguration = configuration{
 		CountryName:             "Georgia",
-		CountryCode:             GE,
+		CountryCode:             ge,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -533,7 +533,7 @@ var (
 
 	gibraltarConfiguration = configuration{
 		CountryName:             "Gibraltar",
-		CountryCode:             GI,
+		CountryCode:             gi,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -551,7 +551,7 @@ var (
 
 	greenlandConfiguration = configuration{
 		CountryName:             "Greenland",
-		CountryCode:             GL,
+		CountryCode:             gl,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -569,7 +569,7 @@ var (
 
 	greeceConfiguration = configuration{
 		CountryName:             "Greece",
-		CountryCode:             GR,
+		CountryCode:             gr,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -587,7 +587,7 @@ var (
 
 	guatemalaConfiguration = configuration{
 		CountryName:             "Guatemala",
-		CountryCode:             GT,
+		CountryCode:             gt,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -605,7 +605,7 @@ var (
 
 	croatiaConfiguration = configuration{
 		CountryName:             "Croatia",
-		CountryCode:             HR,
+		CountryCode:             hr,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -623,7 +623,7 @@ var (
 
 	hungaryConfiguration = configuration{
 		CountryName:             "Hungary",
-		CountryCode:             HU,
+		CountryCode:             hu,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -641,7 +641,7 @@ var (
 
 	irelandConfiguration = configuration{
 		CountryName:             "Ireland",
-		CountryCode:             IE,
+		CountryCode:             ie,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -659,7 +659,7 @@ var (
 
 	israelConfiguration = configuration{
 		CountryName:             "Israel",
-		CountryCode:             IL,
+		CountryCode:             il,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -677,7 +677,7 @@ var (
 
 	iraqConfiguration = configuration{
 		CountryName:             "Iraq",
-		CountryCode:             IQ,
+		CountryCode:             iq,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -695,7 +695,7 @@ var (
 
 	icelandConfiguration = configuration{
 		CountryName:             "Iceland",
-		CountryCode:             IS,
+		CountryCode:             is,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -713,7 +713,7 @@ var (
 
 	italyConfiguration = configuration{
 		CountryName:             "Italy",
-		CountryCode:             IT,
+		CountryCode:             it,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -731,7 +731,7 @@ var (
 
 	jordanConfiguration = configuration{
 		CountryName:             "Jordan",
-		CountryCode:             JO,
+		CountryCode:             jo,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -749,7 +749,7 @@ var (
 
 	kuwaitConfiguration = configuration{
 		CountryName:             "Kuwait",
-		CountryCode:             KW,
+		CountryCode:             kw,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -767,7 +767,7 @@ var (
 
 	kazakhstanConfiguration = configuration{
 		CountryName:             "Kazakhstan",
-		CountryCode:             KZ,
+		CountryCode:             kz,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -785,7 +785,7 @@ var (
 
 	lebanonConfiguration = configuration{
 		CountryName:             "Lebanon",
-		CountryCode:             LB,
+		CountryCode:             lb,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -803,7 +803,7 @@ var (
 
 	saintLuciaConfiguration = configuration{
 		CountryName:             "Saint Lucia",
-		CountryCode:             LC,
+		CountryCode:             lc,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -821,7 +821,7 @@ var (
 
 	liechtensteinConfiguration = configuration{
 		CountryName:             "Liechtenstein",
-		CountryCode:             LI,
+		CountryCode:             li,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -839,7 +839,7 @@ var (
 
 	lithuaniaConfiguration = configuration{
 		CountryName:             "Lithuania",
-		CountryCode:             LT,
+		CountryCode:             lt,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -857,7 +857,7 @@ var (
 
 	luxembourgConfiguration = configuration{
 		CountryName:             "Luxembourg",
-		CountryCode:             LU,
+		CountryCode:             lu,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -875,7 +875,7 @@ var (
 
 	latviaConfiguration = configuration{
 		CountryName:             "Latvia",
-		CountryCode:             LV,
+		CountryCode:             lv,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -893,7 +893,7 @@ var (
 
 	monacoConfiguration = configuration{
 		CountryName:             "Monaco",
-		CountryCode:             MC,
+		CountryCode:             mc,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -911,7 +911,7 @@ var (
 
 	moldovaConfiguration = configuration{
 		CountryName:             "Moldova",
-		CountryCode:             MD,
+		CountryCode:             md,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -929,7 +929,7 @@ var (
 
 	montenegroConfiguration = configuration{
 		CountryName:             "Montenegro",
-		CountryCode:             ME,
+		CountryCode:             me,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -947,7 +947,7 @@ var (
 
 	macedoniaConfiguration = configuration{
 		CountryName:             "Macedonia",
-		CountryCode:             MK,
+		CountryCode:             mk,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -965,7 +965,7 @@ var (
 
 	mauritaniaConfiguration = configuration{
 		CountryName:             "Mauritania",
-		CountryCode:             MR,
+		CountryCode:             mr,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -983,7 +983,7 @@ var (
 
 	maltaConfiguration = configuration{
 		CountryName:             "Malta",
-		CountryCode:             MT,
+		CountryCode:             mt,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1001,7 +1001,7 @@ var (
 
 	mauritiusConfiguration = configuration{
 		CountryName:             "Mauritius",
-		CountryCode:             MU,
+		CountryCode:             mu,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1019,7 +1019,7 @@ var (
 
 	netherlandsConfiguration = configuration{
 		CountryName:             "The Netherlands",
-		CountryCode:             NL,
+		CountryCode:             nl,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1037,7 +1037,7 @@ var (
 
 	norwayConfiguration = configuration{
 		CountryName:             "Norway",
-		CountryCode:             NO,
+		CountryCode:             no,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1055,7 +1055,7 @@ var (
 
 	pakistanConfiguration = configuration{
 		CountryName:             "Pakistan",
-		CountryCode:             PK,
+		CountryCode:             pk,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1073,7 +1073,7 @@ var (
 
 	polandConfiguration = configuration{
 		CountryName:             "Poland",
-		CountryCode:             PL,
+		CountryCode:             pl,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1091,7 +1091,7 @@ var (
 
 	palestineConfiguration = configuration{
 		CountryName:             "State of Palestine",
-		CountryCode:             PS,
+		CountryCode:             ps,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1109,7 +1109,7 @@ var (
 
 	portugalConfiguration = configuration{
 		CountryName:             "Portugal",
-		CountryCode:             PT,
+		CountryCode:             pt,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{}, // Azores, Madeira does not have proper Country Code
@@ -1127,7 +1127,7 @@ var (
 
 	qatarConfiguration = configuration{
 		CountryName:             "Qatar",
-		CountryCode:             QA,
+		CountryCode:             qa,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1145,7 +1145,7 @@ var (
 
 	romaniaConfiguration = configuration{
 		CountryName:             "Romania",
-		CountryCode:             RO,
+		CountryCode:             ro,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1163,7 +1163,7 @@ var (
 
 	serbiaConfiguration = configuration{
 		CountryName:             "Serbia",
-		CountryCode:             RS,
+		CountryCode:             rs,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1181,7 +1181,7 @@ var (
 
 	saudiArabiaConfiguration = configuration{
 		CountryName:             "Saudi Arabia",
-		CountryCode:             SA,
+		CountryCode:             sa,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1199,7 +1199,7 @@ var (
 
 	seychellesConfiguration = configuration{
 		CountryName:             "Seychelles",
-		CountryCode:             SC,
+		CountryCode:             sc,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1217,7 +1217,7 @@ var (
 
 	swedenConfiguration = configuration{
 		CountryName:             "Sweden",
-		CountryCode:             SE,
+		CountryCode:             se,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1235,7 +1235,7 @@ var (
 
 	sloveniaConfiguration = configuration{
 		CountryName:             "Slovenia",
-		CountryCode:             SI,
+		CountryCode:             si,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1253,7 +1253,7 @@ var (
 
 	slovakiaConfiguration = configuration{
 		CountryName:             "Slovakia",
-		CountryCode:             SK,
+		CountryCode:             sk,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1271,7 +1271,7 @@ var (
 
 	sanMarinoConfiguration = configuration{
 		CountryName:             "San Marino",
-		CountryCode:             SM,
+		CountryCode:             sm,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1289,7 +1289,7 @@ var (
 
 	saoTomePrincipeConfiguration = configuration{
 		CountryName:             "Sao Tome and Principe",
-		CountryCode:             ST,
+		CountryCode:             st,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1311,7 +1311,7 @@ var (
 
 	elSalvadorConfiguration = configuration{
 		CountryName:             "El Salvador",
-		CountryCode:             SV,
+		CountryCode:             sv,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1329,7 +1329,7 @@ var (
 
 	timorLesteConfiguration = configuration{
 		CountryName:             "Timor-Leste",
-		CountryCode:             TL,
+		CountryCode:             tl,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1347,7 +1347,7 @@ var (
 
 	tunisiaConfiguration = configuration{
 		CountryName:             "Tunisia",
-		CountryCode:             TN,
+		CountryCode:             tn,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1365,7 +1365,7 @@ var (
 
 	turkeyConfiguration = configuration{
 		CountryName:             "Turkey",
-		CountryCode:             TR,
+		CountryCode:             tr,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1383,7 +1383,7 @@ var (
 
 	ukraineConfiguration = configuration{
 		CountryName:             "Ukraine",
-		CountryCode:             UA,
+		CountryCode:             ua,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1401,7 +1401,7 @@ var (
 
 	vaticanCityStateConfiguration = configuration{
 		CountryName:             "Vatican City State",
-		CountryCode:             VA,
+		CountryCode:             va,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1419,7 +1419,7 @@ var (
 
 	virginIslandsConfiguration = configuration{
 		CountryName:             "Virgin Islands",
-		CountryCode:             VG,
+		CountryCode:             vg,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1437,7 +1437,7 @@ var (
 
 	kosovoConfiguration = configuration{
 		CountryName:             "Kosovo",
-		CountryCode:             XK,
+		CountryCode:             xk,
 		IncludedCountryCode:     []countryCode{},
 		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
@@ -1453,3 +1453,12 @@ var (
 		},
 	}
 )
+
+// GetCountryConfiguration returns ISO 13616-Compliant IBAN Formats from a given country code
+// If the countryCode does not exist in the list, returns an error `ErrCountryCodeDoesNotExist`
+func GetCountryConfiguration(countryCode string) (*configuration, error) {
+	if conf, ok := countriesConfiguration[countryCode]; ok {
+		return &conf, nil
+	}
+	return nil, ErrCountryCodeDoesNotExist
+}
