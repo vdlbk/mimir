@@ -15,6 +15,7 @@ Stay tuned for updates !
 
 +  Validate an IBAN (every country supported)
 +  Compute check digits from a valid IBAN
++  Get country configuration (ISO 13616-Compliant IBAN Formats)
 
 ## Use
 
