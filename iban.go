@@ -14,6 +14,9 @@ const (
 
 // IsIBANValid checks if the given IBAN is valid based on the country its belong to
 func IsIBANValid(iban string) (bool, error) {
+	// Remove all spaces
+	iban = strings.Replace(iban, " ", "", -1)
+
 	err := checkIBAN(iban)
 	if err != nil {
 		return false, err
@@ -43,6 +46,9 @@ func IsIBANValid(iban string) (bool, error) {
 // GetCheckDigits compute the check digits from a given IBAN.
 // Returns the computed digits, the IBAN set with the check digits or an error if something goes wrong
 func GetCheckDigits(iban string) (string, string, error) {
+	// Remove all spaces
+	iban = strings.Replace(iban, " ", "", -1)
+
 	err := checkIBAN(iban)
 	if err != nil {
 		return "", "", err

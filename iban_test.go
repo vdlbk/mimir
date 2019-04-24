@@ -7,8 +7,13 @@ import (
 func Test_IsIBANValid(t *testing.T) {
 	for _, configuration := range countriesConfiguration {
 
-		if ok, _ := IsIBANValid(configuration.IBANDefinition.Example); !ok {
-			t.Errorf("Output was incorrect, IsIBANValid(%s)= false, want: true.", configuration.IBANDefinition.Example)
+		if ok, err := IsIBANValid(configuration.IBANDefinition.Example); !ok {
+			t.Errorf("Output was incorrect, IsIBANValid(%s)= false, %v; want: true.", configuration.IBANDefinition.Example, err)
+		}
+
+		// As the PrintFormat contains some spaces, it will tests than the IBAN is still valid
+		if ok, err := IsIBANValid(configuration.IBANDefinition.PrintFormat); !ok {
+			t.Errorf("Output was incorrect, IsIBANValid(%s)= false, %v; want: true.", configuration.IBANDefinition.Example, err)
 		}
 	}
 }
