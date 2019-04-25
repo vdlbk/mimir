@@ -13,9 +13,13 @@ This library is still in development, so it might be possible that some methods 
 As the project just started, it is quite poor in method.    
 Stay tuned for updates !
 
-+  Validate an IBAN (every country supported)
++  Validate an IBAN 
 +  Compute check digits from a valid IBAN
 +  Get country configuration (ISO 13616-Compliant IBAN Formats)
+
+### Supported countries
+
+Please visit [SUPPORTED_COUNTRIES.md](https://github.com/vdlbk/mimir/blob/master/SUPPORTED_COUNTRIES.md)
 
 ## Use
 

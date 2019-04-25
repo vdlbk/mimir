@@ -23,8 +23,20 @@ func Test_CountryMap(t *testing.T) {
 	}
 }
 
+func Test_CountryPrefixInIBAN(t *testing.T) {
+	for _, configuration := range countriesConfiguration {
+
+		if configuration.CountryCode.String() != configuration.IBANDefinition.Example[:2] {
+			t.Errorf("Prefix Incorrect the configuration may not be accurate, got: %v, want: %v.",
+				configuration.IBANDefinition.Example[:2],
+				configuration.CountryCode.String(),
+			)
+		}
+	}
+}
+
 func Test_SEPACountry(t *testing.T) {
-	const expectedSEPACountry = 35
+	const expectedSEPACountry = 42
 	ctrSEPACountry := 0
 
 	for _, configuration := range countriesConfiguration {

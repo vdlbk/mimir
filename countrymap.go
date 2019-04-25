@@ -79,13 +79,27 @@ var (
 		va.String(): vaticanCityStateConfiguration,
 		vg.String(): virginIslandsConfiguration,
 		xk.String(): kosovoConfiguration,
+
+		gf.String(): frenchGuianaConfiguration,
+		gp.String(): guadaloupeConfiguration,
+		mq.String(): martiniqueConfiguration,
+		re.String(): reunionConfiguration,
+		pf.String(): frenchPolynesiaConfiguration,
+		tf.String(): frenchSouthernTerritoriesConfiguration,
+		yt.String(): mayotteConfiguration,
+		nc.String(): newCaledoniaConfiguration,
+		bl.String(): saintBarthelemyConfiguration,
+		mf.String(): collectivityOfSaintMartinConfiguration,
+		pm.String(): saintPierreAndMiquelonConfiguration,
+		wf.String(): wallisAndFutunaIslandsConfiguration,
+		ax.String(): alandIslandsConfiguration,
 	}
 
 	andorraConfiguration = configuration{
 		CountryName:             "Andorra",
 		CountryCode:             ad,
 		IncludedCountryCode:     []countryCode{},
-		IsSEPAAvailable:         false,
+		IsSEPAAvailable:         true,
 		SEPAIncludedCountryCode: []countryCode{},
 		AccountNumberExample:    "2030200359100100",
 		IBANDefinition: definition{
@@ -1439,7 +1453,7 @@ var (
 		CountryName:             "Kosovo",
 		CountryCode:             xk,
 		IncludedCountryCode:     []countryCode{},
-		IsSEPAAvailable:         true,
+		IsSEPAAvailable:         false,
 		SEPAIncludedCountryCode: []countryCode{},
 		AccountNumberExample:    "1212 0123456789 06",
 		IBANDefinition: definition{
@@ -1452,6 +1466,241 @@ var (
 			Example: "1212012345678906",
 		},
 	}
+
+	frenchGuianaConfiguration = configuration{
+		CountryName:             "French Guiana",
+		CountryCode:             gf,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         true,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "GF4120041010050500013M02606",
+			PrintFormat: "GF41 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	guadaloupeConfiguration = configuration{
+		CountryName:             "Guadaloupe",
+		CountryCode:             gp,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         true,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "GP1120041010050500013M02606",
+			PrintFormat: "GP11 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	martiniqueConfiguration = configuration{
+		CountryName:             "Martinique",
+		CountryCode:             mq,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         true,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "MQ5120041010050500013M02606",
+			PrintFormat: "MQ51 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	reunionConfiguration = configuration{
+		CountryName:             "Reunion",
+		CountryCode:             re,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         true,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "RE4220041010050500013M02606",
+			PrintFormat: "RE42 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	frenchPolynesiaConfiguration = configuration{
+		CountryName:             "French Polynesia",
+		CountryCode:             pf,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "PF5720041010050500013M02606",
+			PrintFormat: "PF57 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	frenchSouthernTerritoriesConfiguration = configuration{
+		CountryName:             "French Southern Territories",
+		CountryCode:             tf,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "TF2120041010050500013M02606",
+			PrintFormat: "TF21 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	mayotteConfiguration = configuration{
+		CountryName:             "Mayotte",
+		CountryCode:             yt,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         true,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "YT3120041010050500013M02606",
+			PrintFormat: "YT31 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	newCaledoniaConfiguration = configuration{
+		CountryName:             "New Caledonia",
+		CountryCode:             nc,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "NC8420041010050500013M02606",
+			PrintFormat: "NC84 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	saintBarthelemyConfiguration = configuration{
+		CountryName:             "Saint Barthélemy",
+		CountryCode:             bl,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "BL6820041010050500013M02606",
+			PrintFormat: "BL68 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	collectivityOfSaintMartinConfiguration = configuration{
+		CountryName:             "Saint Martin",
+		CountryCode:             mf,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "MF8420041010050500013M02606",
+			PrintFormat: "MF84 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	saintPierreAndMiquelonConfiguration = configuration{
+		CountryName:             "Kosovo",
+		CountryCode:             pm,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         true,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "PM3620041010050500013M02606",
+			PrintFormat: "PM36 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	wallisAndFutunaIslandsConfiguration = configuration{
+		CountryName:             "Wallis and Futuna",
+		CountryCode:             wf,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20041 01005 0500013M026 06",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "WF9120041010050500013M02606",
+			PrintFormat: "WF91 2004 1010 0505 0001 3M02 606",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20041010050500013M02606",
+		},
+	}
+
+	alandIslandsConfiguration = configuration{
+		CountryName:             "Åland Islands",
+		CountryCode:             ax,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         true,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "1234 5600 0007 85",
+		IBANDefinition: definition{
+			Length:      18,
+			Example:     "AX2112345600000785",
+			PrintFormat: "AX21 1234 5600 0007 85",
+		},
+		BBANDefinition: definition{
+			Length:  14,
+			Example: "12345600000785",
+		},
+	}
+
 )
 
 // GetCountryConfiguration returns ISO 13616-Compliant IBAN Formats from a given country code
