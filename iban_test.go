@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func Test_IsIBANValid(t *testing.T) {
+func TestIsIBANValid(t *testing.T) {
 	for _, configuration := range countriesConfiguration {
 
 		if ok, err := IsIBANValid(configuration.IBANDefinition.Example); !ok {
@@ -15,10 +15,12 @@ func Test_IsIBANValid(t *testing.T) {
 		if ok, err := IsIBANValid(configuration.IBANDefinition.PrintFormat); !ok {
 			t.Errorf("Output was incorrect, IsIBANValid(%s)= false, %v; want: true.", configuration.IBANDefinition.Example, err)
 		}
+
+		// TODO: Add tests for lowercase IBAN
 	}
 }
 
-func Test_GetCheckDigits(t *testing.T) {
+func TestGetCheckDigits(t *testing.T) {
 	for _, configuration := range countriesConfiguration {
 
 		check, iban, err := GetCheckDigits(configuration.IBANDefinition.Example)
@@ -35,5 +37,24 @@ func Test_GetCheckDigits(t *testing.T) {
 				configuration.IBANDefinition.Example,
 			)
 		}
+	}
+}
+
+func TestPrintFormatIBAN(t *testing.T) {
+	for _, configuration := range countriesConfiguration {
+
+		formattedIBAN, err := PrintFormatIBAN(configuration.IBANDefinition.Example)
+		if err != nil {
+			t.Errorf("Unexpected error occured: %v", err)
+		}
+
+		if formattedIBAN != configuration.IBANDefinition.PrintFormat {
+			t.Errorf("Output was incorrect, PrintFormatIBAN(%s)= %v; want: %v.",
+				configuration.IBANDefinition.Example,
+				formattedIBAN,
+				configuration.IBANDefinition.PrintFormat,
+			)
+		}
+
 	}
 }

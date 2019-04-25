@@ -17,7 +17,7 @@ func IsIBANValid(iban string) (bool, error) {
 	// Remove all spaces
 	iban = strings.Replace(iban, " ", "", -1)
 
-	err := checkIBAN(iban)
+	_, err := checkIBAN(iban)
 	if err != nil {
 		return false, err
 	}
@@ -49,7 +49,7 @@ func GetCheckDigits(iban string) (string, string, error) {
 	// Remove all spaces
 	iban = strings.Replace(iban, " ", "", -1)
 
-	err := checkIBAN(iban)
+	_, err := checkIBAN(iban)
 	if err != nil {
 		return "", "", err
 	}
@@ -80,10 +80,10 @@ func GetCheckDigits(iban string) (string, string, error) {
 	return strconv.Itoa(int(check)), iban, nil
 }
 
-func checkIBAN(iban string) error {
+func checkIBAN(iban string) (*configuration, error) {
 	// the given IBAN's length cannot be less than `minimumIBANLength`
 	if len(iban) < minimumIBANLength {
-		return ErrIBANTooshort
+		return nil, ErrIBANTooshort
 	}
 
 	iban = strings.ToUpper(iban)
@@ -93,12 +93,41 @@ func checkIBAN(iban string) error {
 
 	// Extracts country code from the first 2 characters of the IBAN and if exists, get the country configuration associated with it.
 	if conf, ok = countriesConfiguration[iban[:2]]; !ok {
-		return ErrCountryCodeDoesNotExist
+		return nil, ErrCountryCodeDoesNotExist
 	}
 
 	// Checks the length of the IBAN
 	if len(iban) != conf.IBANDefinition.Length {
-		return ErrIBANIncorrectLength
+		return nil, ErrIBANIncorrectLength
 	}
-	return nil
+	return &conf, nil
+}
+
+// PrintFormatIBAN format the given IBAN based on the regular way to print it depending the country.
+// It will use the PrintFormat of the configuration to insure the result.
+func PrintFormatIBAN(iban string) (string, error) {
+	// Remove all spaces
+	iban = strings.Replace(iban, " ", "", -1)
+
+	conf, err := checkIBAN(iban)
+	if err != nil {
+		return "", err
+	}
+
+	iban = strings.ToUpper(iban)
+
+	// We use the PrintFormat to get the print pattern
+	wantedParts := strings.Split(conf.IBANDefinition.PrintFormat, " ")
+
+	parts := make([]string, 0, len(wantedParts))
+	for _, p := range wantedParts {
+		partLength := len(p)
+		if partLength > len(iban) {
+			partLength = len(iban)
+		}
+		prefix := iban[:partLength]
+		parts = append(parts, prefix)
+		iban = strings.TrimPrefix(iban, prefix)
+	}
+	return strings.Join(parts, " "), nil
 }
