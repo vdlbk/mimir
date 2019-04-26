@@ -2,7 +2,7 @@ package mimir
 
 import "testing"
 
-func Test_CountryMap(t *testing.T) {
+func TestCountryMapConfiguration(t *testing.T) {
 	for _, configuration := range countriesConfiguration {
 
 		if configuration.IBANDefinition.Length != len(configuration.IBANDefinition.Example) {
@@ -23,7 +23,7 @@ func Test_CountryMap(t *testing.T) {
 	}
 }
 
-func Test_CountryPrefixInIBAN(t *testing.T) {
+func TestCountryPrefixInIBAN(t *testing.T) {
 	for _, configuration := range countriesConfiguration {
 
 		if configuration.CountryCode.String() != configuration.IBANDefinition.Example[:2] {
@@ -35,7 +35,7 @@ func Test_CountryPrefixInIBAN(t *testing.T) {
 	}
 }
 
-func Test_SEPACountry(t *testing.T) {
+func TestSEPACountry(t *testing.T) {
 	const expectedSEPACountry = 42
 	ctrSEPACountry := 0
 

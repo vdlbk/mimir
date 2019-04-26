@@ -14,8 +14,7 @@ const (
 
 // IsIBANValid checks if the given IBAN is valid based on the country its belong to
 func IsIBANValid(iban string) (bool, error) {
-	// Remove all spaces
-	iban = strings.Replace(iban, " ", "", -1)
+	iban = standardizeIBAN(iban)
 
 	_, err := checkIBAN(iban)
 	if err != nil {
@@ -46,8 +45,7 @@ func IsIBANValid(iban string) (bool, error) {
 // GetCheckDigits compute the check digits from a given IBAN.
 // Returns the computed digits, the IBAN set with the check digits or an error if something goes wrong
 func GetCheckDigits(iban string) (string, string, error) {
-	// Remove all spaces
-	iban = strings.Replace(iban, " ", "", -1)
+	iban = standardizeIBAN(iban)
 
 	_, err := checkIBAN(iban)
 	if err != nil {
@@ -76,7 +74,6 @@ func GetCheckDigits(iban string) (string, string, error) {
 	// Replace the 2 checks digit by the result
 	iban = iban[:2] + fmt.Sprintf("%02d", check) + iban[4:]
 
-
 	return strconv.Itoa(int(check)), iban, nil
 }
 
@@ -103,18 +100,24 @@ func checkIBAN(iban string) (*configuration, error) {
 	return &conf, nil
 }
 
+func standardizeIBAN(iban string) string {
+	// Remove all spaces
+	iban = strings.Replace(iban, " ", "", -1)
+
+	// Sets the IBAN in uppercase
+	iban = strings.ToUpper(iban)
+	return iban
+}
+
 // PrintFormatIBAN format the given IBAN based on the regular way to print it depending the country.
 // It will use the PrintFormat of the configuration to insure the result.
 func PrintFormatIBAN(iban string) (string, error) {
-	// Remove all spaces
-	iban = strings.Replace(iban, " ", "", -1)
+	iban = standardizeIBAN(iban)
 
 	conf, err := checkIBAN(iban)
 	if err != nil {
 		return "", err
 	}
-
-	iban = strings.ToUpper(iban)
 
 	// We use the PrintFormat to get the print pattern
 	wantedParts := strings.Split(conf.IBANDefinition.PrintFormat, " ")

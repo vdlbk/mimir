@@ -1730,7 +1730,6 @@ var (
 		},
 	}
 
-
 	algeriaConfiguration = configuration{
 		CountryName:             "Algeria",
 		CountryCode:             dz,
@@ -2198,9 +2197,6 @@ var (
 			Example: "TG0090604310346500400070",
 		},
 	}
-
-
-
 )
 
 // GetCountryConfiguration returns ISO 13616-Compliant IBAN Formats from a given country code
