@@ -1,6 +1,8 @@
 package mimir
 
 const (
+	countryCodeSize = 2
+
 	ad = countryCode("AD") // Andorra
 	ae = countryCode("AE") // United Arab Emirates
 	al = countryCode("AL") // Albania

@@ -8,11 +8,11 @@ import (
 func TestIsIBANValid(t *testing.T) {
 	for _, configuration := range countriesConfiguration {
 
-		if ok, err := IsIBANValid(configuration.IBANDefinition.Example); !ok {
+		if err := IsIBANValid(configuration.IBANDefinition.Example); err != nil {
 			t.Errorf("Output was incorrect, IsIBANValid(%s)= false, %v; want: true.", configuration.IBANDefinition.Example, err)
 		}
 
-		if ok, err := IsIBANValid(configuration.IBANDefinition.PrintFormat); !ok {
+		if err := IsIBANValid(configuration.IBANDefinition.PrintFormat); err != nil {
 			t.Errorf("Output was incorrect, IsIBANValid(%s)= false, %v; want: true.", configuration.IBANDefinition.PrintFormat, err)
 		}
 	}
@@ -21,27 +21,23 @@ func TestIsIBANValid(t *testing.T) {
 // Tests IsIBANValid with custom values
 func TestIsIBANValidWithCustomValues(t *testing.T) {
 	testCases := []struct {
-		input          string
-		expectedResult bool
-		expectedErr    error
+		input       string
+		expectedErr error
 	}{
-		{"FR1420041010050500013M02606", true, nil},
-		{"fr1420041010050500013M02606", true, nil},
-		{"fR1420041010050500013M02606", true, nil},
-		{"Fr1420041010050500013M02606", true, nil},
-		{"FR1420041010050500013m02606", true, nil},
-		{"FR1420041010050500013M02607", false, ErrIBANInvalidChecksum},
+		{"FR1420041010050500013M02606", nil},
+		{"fr1420041010050500013M02606", nil},
+		{"fR1420041010050500013M02606", nil},
+		{"Fr1420041010050500013M02606", nil},
+		{"FR1420041010050500013m02606", nil},
+		{"FR1420041010050500013M02607", ErrIBANInvalidChecksum},
 	}
 
 	for i, testCase := range testCases {
-		ok, err := IsIBANValid(testCase.input)
 
-		if ok != testCase.expectedResult || err != testCase.expectedErr {
-			t.Errorf("[%d] Ouput was incorrect, IsIBANValid(%s)= %v, %v; want: %v, %v.", i,
+		if err := IsIBANValid(testCase.input); err != testCase.expectedErr {
+			t.Errorf("[%d] Ouput was incorrect, IsIBANValid(%s)= %v; want: %v.", i,
 				testCase.input,
-				ok,
 				err,
-				testCase.expectedResult,
 				testCase.expectedErr,
 			)
 		}
@@ -55,9 +51,9 @@ func TestCheckIBAN(t *testing.T) {
 		expectedErr error
 	}{
 		{"FR1420041010050500013M02606", nil},
-		{"fr1420041010050500013M02606", nil},
-		{"FR14 2004 1010 0505 0001 3M02 606", ErrIBANIncorrectLength}, // checkIBAN should be called with an IBAN that does not contains spaces
+		{"FR14 2004 1010 0505 0001 3M02 606", ErrIBANIncorrectLength},
 		{"", ErrIBANTooshort},
+		{"fr1420041010050500013M02606", ErrCountryCodeDoesNotExist},
 		{"XX1420041010050500013M02606", ErrCountryCodeDoesNotExist},
 		{"FR1420041010050500013M0260", ErrIBANIncorrectLength},
 	}
