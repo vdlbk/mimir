@@ -10,7 +10,7 @@ This library is still in development, so it might be possible that some methods 
 
 ## Methods available
 
-As the project just started, it is quite poor in method.    
+As the project just started, it is quite poor in methods.    
 Stay tuned for updates !
 
 | Method Name | Short Description |
@@ -44,12 +44,12 @@ import (
 func main(){
 	IBAN := "FR1420041010050500013M02606"
 	
-	ok, _ := mimir.IsIBANValid(IBAN)
-	fmt.Println(ok) // true
+	err := mimir.IsIBANValid(IBAN)
+	fmt.Println(err) // nil
 	
 	badIBAN := "FR1420041010050500013M02605"
-    	
-    ok, _ = mimir.IsIBANValid(badIBAN)
-    fmt.Println(ok) // false
+	
+	err = mimir.IsIBANValid(badIBAN)
+	fmt.Println(err) // IBAN invalid checksum
 }
 ```
