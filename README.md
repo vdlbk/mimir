@@ -13,12 +13,12 @@ This library is still in development, so it might be possible that some methods 
 As the project just started, it is quite poor in method.    
 Stay tuned for updates !
 
-| Method | Short Description |
-| ------ | ----------------- |
-| `IsIBANValid(string) (bool, error)` | Validate an IBAN  |
-| `GetCheckDigits(string) (string, string, error)` | Compute check digits from a valid IBAN  |
-| `PrintFormatIBAN(string) (string, error)` | Format IBAN as it would be printed  |
-| `GetCountryConfiguration(string) (*configuration, error)` | Get country configuration (ISO 13616-Compliant IBAN Formats)  |
+| Method Name | Short Description |
+| ----------- | ----------------- |
+| `IsIBANValid` | Validate an IBAN  |
+| `GetCheckDigits` | Compute check digits from a valid IBAN  |
+| `PrintFormatIBAN` | Format IBAN as it would be printed  |
+| `GetCountryConfiguration` | Get country configuration (ISO 13616-Compliant IBAN Formats)  |
 
 ### Supported countries
 

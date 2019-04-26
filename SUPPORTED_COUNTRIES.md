@@ -93,3 +93,37 @@
 | PM | Saint Pierre and Miquelon |
 | WF | Wallis and Futuna Islands |
 | AX | Åland Islands |
+
+## Experimental IBAN Countries
+
+**The countries are supported but the validation may not be perfectly accurate.**    
+If you experienced some troubles using them, please create an Issue.
+
+| CountryCode | Name | 
+| ----------- | ---- |
+| DZ | Algeria	 |
+| AO | Angola	 |
+| BJ | Benin	 |
+| BF | Burkina Faso |
+| BI | Burundi | 
+| CM | Cameroon	 |
+| CV | Cape Verde |
+| CF | Central African Republic |
+| TD | Chad	 | 
+| KM | Comoros	 | 
+| CG | Congo	 | 
+| DJ | Djibouti	|
+| EG | Egypt	|
+| GA | Gabon	|
+| GW | Guinea-Bissau	|
+| HN | Honduras	|
+| IR | Iran	|
+| CI | Ivory Coast	 | 
+| MG | Madagascar	 | 
+| ML | Mali	 | 
+| MA | Morocco	 | 
+| MZ | Mozambique	|
+| NI | Nicaragua	|
+| NE | Niger	 | 
+| SN | Senegal	 | 
+| TG | Togo	 | 

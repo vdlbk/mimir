@@ -95,4 +95,32 @@ const (
 	je = countryCode("JE") // Jersey
 	gg = countryCode("GG") // Guernsey
 	ax = countryCode("AX") // Åland Islands
+
+	// Experimental IBAN Countries
+	dz = countryCode("DZ") // Algeria
+	ao = countryCode("AO") // Angola
+	bj = countryCode("BJ") // Benin
+	bf = countryCode("BF") // Burkina Faso
+	bi = countryCode("BI") // Burundi
+	cm = countryCode("CM") // Cameroon
+	cv = countryCode("CV") // Cape Verde
+	cf = countryCode("CF") // Central African Republic
+	td = countryCode("TD") // Chad
+	km = countryCode("KM") // Comoros
+	cg = countryCode("CG") // Congo
+	dj = countryCode("DJ") // Djibouti
+	eg = countryCode("EG") // Egypt
+	ga = countryCode("GA") // Gabon
+	gw = countryCode("GW") // Guinea-Bissau
+	hn = countryCode("HN") // Honduras
+	ir = countryCode("IR") // Iran
+	ci = countryCode("CI") // Ivory Coast
+	mg = countryCode("MG") // Madagascar
+	ml = countryCode("ML") // Mali
+	ma = countryCode("MA") // Morocco
+	mz = countryCode("MZ") // Mozambique
+	ni = countryCode("NI") // Nicaragua
+	ne = countryCode("NE") // Niger
+	sn = countryCode("SN") // Senegal
+	tg = countryCode("TG") // Togo
 )

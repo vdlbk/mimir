@@ -93,6 +93,35 @@ var (
 		pm.String(): saintPierreAndMiquelonConfiguration,
 		wf.String(): wallisAndFutunaIslandsConfiguration,
 		ax.String(): alandIslandsConfiguration,
+
+
+		// Experimental IBAN Countries
+		dz.String(): algeriaConfiguration,
+		ao.String(): angolaConfiguration,
+		bj.String(): beninConfiguration,
+		bf.String(): burkinaFasoConfiguration,
+		bi.String(): burundiConfiguration,
+		cm.String(): cameroonConfiguration,
+		cv.String(): capeVerdeConfiguration,
+		cf.String(): centralAfricanRepublicConfiguration,
+		td.String(): chadConfiguration,
+		km.String(): comorosConfiguration,
+		cg.String(): congoConfiguration,
+		dj.String(): djiboutiConfiguration,
+		eg.String(): egyptConfiguration,
+		ga.String(): gabonConfiguration,
+		gw.String(): guineaBissauConfiguration,
+		hn.String(): hondurasConfiguration,
+		ir.String(): iranConfiguration,
+		ci.String(): ivoryCoastConfiguration,
+		mg.String(): madagascarConfiguration,
+		ml.String(): maliConfiguration,
+		ma.String(): moroccoConfiguration,
+		mz.String(): mozambiqueConfiguration,
+		ni.String(): nicaraguaConfiguration,
+		ne.String(): nigerConfiguration,
+		sn.String(): senegalConfiguration,
+		tg.String(): togoConfiguration,
 	}
 
 	andorraConfiguration = configuration{
@@ -1313,7 +1342,7 @@ var (
 			Example:     "ST32000200010192194210112",
 			PrintFormat: "ST32 0002 0001 0192 1942 1011 2",
 
-			// Given the Swift IBAN Registryn the following IBAN should be valid but they're not. The correct checksum is 32, not 68.
+			// Given the Swift IBAN Registry the following IBAN should be valid but they're not. The correct checksum is 32, not 68.
 			//Example:     "ST68000200010192194210112",
 			//PrintFormat: "ST68 0002 0001 0192 1942 1011 2",
 		},
@@ -1700,6 +1729,477 @@ var (
 			Example: "12345600000785",
 		},
 	}
+
+
+	algeriaConfiguration = configuration{
+		CountryName:             "Algeria",
+		CountryCode:             dz,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "22738346840171372597",
+		IBANDefinition: definition{
+			Length:      24,
+			Example:     "DZ8022738346840171372597",
+			PrintFormat: "DZ80 2273 8346 8401 7137 2597",
+		},
+		BBANDefinition: definition{
+			Length:  20,
+			Example: "22738346840171372597",
+		},
+	}
+
+	angolaConfiguration = configuration{
+		CountryName:             "Angola",
+		CountryCode:             ao,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "226781323520060113196",
+		IBANDefinition: definition{
+			Length:      25,
+			Example:     "AO27226781323520060113196",
+			PrintFormat: "AO27 2267 8132 3520 0601 1319 6",
+		},
+		BBANDefinition: definition{
+			Length:  21,
+			Example: "226781323520060113196",
+		},
+	}
+
+	beninConfiguration = configuration{
+		CountryName:             "Benin",
+		CountryCode:             bj,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "99932227891101178429964",
+		IBANDefinition: definition{
+			Length:      28,
+			Example:     "BJ73B99932227891101178429964",
+			PrintFormat: "BJ73 B999 3222 7891 1011 7842 9964",
+		},
+		BBANDefinition: definition{
+			Length:  24,
+			Example: "B99932227891101178429964",
+		},
+	}
+
+	burkinaFasoConfiguration = configuration{
+		CountryName:             "Burkina Faso",
+		CountryCode:             bf,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "30134020015400945000643",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "BF1030134020015400945000643",
+			PrintFormat: "BF10 3013 4020 0154 0094 5000 643",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "30134020015400945000643",
+		},
+	}
+
+	burundiConfiguration = configuration{
+		CountryName:             "Burundi",
+		CountryCode:             bi,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "201011067444",
+		IBANDefinition: definition{
+			Length:      16,
+			Example:     "BI43201011067444",
+			PrintFormat: "BI43 2010 1106 7444",
+		},
+		BBANDefinition: definition{
+			Length:  12,
+			Example: "201011067444",
+		},
+	}
+
+	cameroonConfiguration = configuration{
+		CountryName:             "Cameroon",
+		CountryCode:             cm,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "10003001000500000605306",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "CM2110003001000500000605306",
+			PrintFormat: "CM21 1000 3001 0005 0000 0605 306",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "10003001000500000605306",
+		},
+	}
+
+	capeVerdeConfiguration = configuration{
+		CountryName:             "Cape Verde",
+		CountryCode:             cv,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "000300004547069110176",
+		IBANDefinition: definition{
+			Length:      25,
+			Example:     "CV64000300004547069110176",
+			PrintFormat: "CV64 0003 0000 4547 0691 1017 6",
+		},
+		BBANDefinition: definition{
+			Length:  21,
+			Example: "000300004547069110176",
+		},
+	}
+
+	centralAfricanRepublicConfiguration = configuration{
+		CountryName:             "Central African Republic",
+		CountryCode:             cf,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "20001000010120069700160",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "CF4220001000010120069700160",
+			PrintFormat: "CF42 2000 1000 0101 2006 9700 160",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "20001000010120069700160",
+		},
+	}
+
+	chadConfiguration = configuration{
+		CountryName:             "Chad",
+		CountryCode:             td,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "00020000556026733000006",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "TD7200020000556026733000006",
+			PrintFormat: "TD72 0002 0000 5560 2673 3000 006",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "00020000556026733000006",
+		},
+	}
+
+	comorosConfiguration = configuration{
+		CountryName:             "Comoros",
+		CountryCode:             km,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "40002000055602673300064",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "KM4640002000055602673300064",
+			PrintFormat: "KM46 4000 2000 0556 0267 3300 064",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "40002000055602673300064",
+		},
+	}
+
+	congoConfiguration = configuration{
+		CountryName:             "Congo",
+		CountryCode:             cg,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "30011000202151234567890",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "CG5230011000202151234567890",
+			PrintFormat: "CG52 3001 1000 2021 5123 4567 890",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "30011000202151234567890",
+		},
+	}
+
+	djiboutiConfiguration = configuration{
+		CountryName:             "Djibouti",
+		CountryCode:             dj,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "10002010010409943020008",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "DJ2110002010010409943020008",
+			PrintFormat: "DJ21 1000 2010 0104 0994 3020 008",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "10002010010409943020008",
+		},
+	}
+
+	egyptConfiguration = configuration{
+		CountryName:             "Egypt",
+		CountryCode:             eg,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "00006001880800100014553",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "EG1100006001880800100014553",
+			PrintFormat: "EG11 0000 6001 8808 0010 0014 553",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "00006001880800100014553",
+		},
+	}
+
+	gabonConfiguration = configuration{
+		CountryName:             "Gabon",
+		CountryCode:             ga,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "40002000055602673300064",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "GA2140002000055602673300064",
+			PrintFormat: "GA21 4000 2000 0556 0267 3300 064",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "40002000055602673300064",
+		},
+	}
+
+	guineaBissauConfiguration = configuration{
+		CountryName:             "Guinea-Bissau",
+		CountryCode:             gw,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "GW1430010181800637601",
+		IBANDefinition: definition{
+			Length:      25,
+			Example:     "GW04GW1430010181800637601",
+			PrintFormat: "GW04 GW14 3001 0181 8006 3760 1",
+		},
+		BBANDefinition: definition{
+			Length:  21,
+			Example: "GW1430010181800637601",
+		},
+	}
+
+	hondurasConfiguration = configuration{
+		CountryName:             "Honduras",
+		CountryCode:             hn,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "27346509718683143911",
+		IBANDefinition: definition{
+			Length:      28,
+			Example:     "HN25VOWU27346509718683143911",
+			PrintFormat: "HN25 VOWU 2734 6509 7186 8314 3911",
+		},
+		BBANDefinition: definition{
+			Length:  24,
+			Example: "VOWU27346509718683143911",
+		},
+	}
+
+	iranConfiguration = configuration{
+		CountryName:             "Iran",
+		CountryCode:             ir,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "0570029971601460641001",
+		IBANDefinition: definition{
+			Length:      26,
+			Example:     "IR710570029971601460641001",
+			PrintFormat: "IR71 0570 0299 7160 1460 6410 01",
+		},
+		BBANDefinition: definition{
+			Length:  22,
+			Example: "0570029971601460641001",
+		},
+	}
+
+	ivoryCoastConfiguration = configuration{
+		CountryName:             "Ivory Coast",
+		CountryCode:             ci,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "28456236523184811313497",
+		IBANDefinition: definition{
+			Length:      28,
+			Example:     "CI80C28456236523184811313497",
+			PrintFormat: "CI80 C284 5623 6523 1848 1131 3497",
+		},
+		BBANDefinition: definition{
+			Length:  24,
+			Example: "C28456236523184811313497",
+		},
+	}
+
+	madagascarConfiguration = configuration{
+		CountryName:             "Madagascar",
+		CountryCode:             mg,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "00005030010101914016056",
+		IBANDefinition: definition{
+			Length:      27,
+			Example:     "MG4600005030010101914016056",
+			PrintFormat: "MG46 0000 5030 0101 0191 4016 056",
+		},
+		BBANDefinition: definition{
+			Length:  23,
+			Example: "00005030010101914016056",
+		},
+	}
+
+	maliConfiguration = configuration{
+		CountryName:             "Mali",
+		CountryCode:             ml,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "00890170001002120000447",
+		IBANDefinition: definition{
+			Length:      28,
+			Example:     "ML03D00890170001002120000447",
+			PrintFormat: "ML03 D008 9017 0001 0021 2000 0447",
+		},
+		BBANDefinition: definition{
+			Length:  24,
+			Example: "D00890170001002120000447",
+		},
+	}
+
+	moroccoConfiguration = configuration{
+		CountryName:             "Morocco",
+		CountryCode:             ma,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "011519000001205000534921",
+		IBANDefinition: definition{
+			Length:      28,
+			Example:     "MA64011519000001205000534921",
+			PrintFormat: "MA64 0115 1900 0001 2050 0053 4921",
+		},
+		BBANDefinition: definition{
+			Length:  24,
+			Example: "011519000001205000534921",
+		},
+	}
+
+	mozambiqueConfiguration = configuration{
+		CountryName:             "Mozambique",
+		CountryCode:             mz,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "000100000011834194157",
+		IBANDefinition: definition{
+			Length:      25,
+			Example:     "MZ59000100000011834194157",
+			PrintFormat: "MZ59 0001 0000 0011 8341 9415 7",
+		},
+		BBANDefinition: definition{
+			Length:  21,
+			Example: "000100000011834194157",
+		},
+	}
+
+	nicaraguaConfiguration = configuration{
+		CountryName:             "Nicaragua",
+		CountryCode:             ni,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "157382578924464167824447",
+		IBANDefinition: definition{
+			Length:      32,
+			Example:     "NI62ABCD157382578924464167824447",
+			PrintFormat: "NI62 ABCD 1573 8257 8924 4641 6782 4447",
+		},
+		BBANDefinition: definition{
+			Length:  28,
+			Example: "ABCD157382578924464167824447",
+		},
+	}
+
+	nigerConfiguration = configuration{
+		CountryName:             "Niger",
+		CountryCode:             ne,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "0380100100130305000268",
+		IBANDefinition: definition{
+			Length:      28,
+			Example:     "NE58NE0380100100130305000268",
+			PrintFormat: "NE58 NE03 8010 0100 1303 0500 0268",
+		},
+		BBANDefinition: definition{
+			Length:  24,
+			Example: "NE0380100100130305000268",
+		},
+	}
+
+	senegalConfiguration = configuration{
+		CountryName:             "Senegal",
+		CountryCode:             sn,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "00100152000048500003035",
+		IBANDefinition: definition{
+			Length:      28,
+			Example:     "SN21S00100152000048500003035",
+			PrintFormat: "SN21 S001 0015 2000 0485 0000 3035",
+		},
+		BBANDefinition: definition{
+			Length:  24,
+			Example: "S00100152000048500003035",
+		},
+	}
+
+	togoConfiguration = configuration{
+		CountryName:             "Togo",
+		CountryCode:             tg,
+		IncludedCountryCode:     []countryCode{},
+		IsSEPAAvailable:         false,
+		SEPAIncludedCountryCode: []countryCode{},
+		AccountNumberExample:    "0090604310346500400070",
+		IBANDefinition: definition{
+			Length:      28,
+			Example:     "TG53TG0090604310346500400070",
+			PrintFormat: "TG53 TG00 9060 4310 3465 0040 0070",
+		},
+		BBANDefinition: definition{
+			Length:  24,
+			Example: "TG0090604310346500400070",
+		},
+	}
+
+
 
 )
 
