@@ -111,7 +111,7 @@ func standardizeIBAN(iban string) string {
 	return iban
 }
 
-// PrintFormatIBAN format the given IBAN based on the regular way to print it depending the country.
+// PrintFormatIBAN formats the given IBAN based on the regular way to print it depending the country.
 // It will use the PrintFormat of the configuration to insure the result.
 func PrintFormatIBAN(iban string) (string, error) {
 	iban = standardizeIBAN(iban)
@@ -170,5 +170,21 @@ func SplitIBAN(iban string) ([]string, []string, error) {
 	}
 
 	return keys, values, nil
+}
 
+// FormatIBAN formats the given IBAN with the different parts that are defined in its structure.
+func FormatIBAN(iban string) (string, error) {
+	iban = standardizeIBAN(iban)
+
+	_, err := checkIBAN(iban)
+	if err != nil {
+		return "", err
+	}
+
+	_, v, err := SplitIBAN(iban)
+	if err != nil {
+		return "", err
+	}
+
+	return strings.Join(v, " "), nil
 }
