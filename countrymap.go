@@ -94,7 +94,6 @@ var (
 		wf.String(): wallisAndFutunaIslandsConfiguration,
 		ax.String(): alandIslandsConfiguration,
 
-
 		// Experimental IBAN Countries
 		dz.String(): algeriaConfiguration,
 		ao.String(): angolaConfiguration,
