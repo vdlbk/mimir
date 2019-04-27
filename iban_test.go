@@ -36,7 +36,7 @@ func TestIsIBANValidWithCustomValues(t *testing.T) {
 	for i, testCase := range testCases {
 
 		if err := IsIBANValid(testCase.input); err != testCase.expectedErr {
-			t.Errorf("[%d] Ouput was incorrect, IsIBANValid(%s)= %v; want: %v.", i,
+			t.Errorf("[%d] Output was incorrect, IsIBANValid(%s)= %v; want: %v.", i,
 				testCase.input,
 				err,
 				testCase.expectedErr,
@@ -63,7 +63,7 @@ func TestCheckIBAN(t *testing.T) {
 		_, err := checkIBAN(testCase.input)
 
 		if err != testCase.expectedErr {
-			t.Errorf("[%d] Ouput was incorrect, checkIBAN(%s)= %v, want: %v.", i, testCase.input, err, testCase.expectedErr)
+			t.Errorf("[%d] Output was incorrect, checkIBAN(%s)= %v, want: %v.", i, testCase.input, err, testCase.expectedErr)
 		}
 	}
 }
@@ -74,7 +74,7 @@ func TestGetCheckDigits(t *testing.T) {
 
 		check, iban, err := GetCheckDigits(configuration.IBANDefinition.Example)
 		if err != nil {
-			t.Errorf("Unexpected error occured: %v", err)
+			t.Errorf("Unexpected error occurred: %v", err)
 		}
 
 		if iban != configuration.IBANDefinition.Example {
@@ -95,7 +95,7 @@ func TestPrintFormatIBAN(t *testing.T) {
 
 		formattedIBAN, err := PrintFormatIBAN(configuration.IBANDefinition.Example)
 		if err != nil {
-			t.Errorf("Unexpected error occured: %v", err)
+			t.Errorf("Unexpected error occurred: %v", err)
 		}
 
 		if formattedIBAN != configuration.IBANDefinition.PrintFormat {
@@ -131,7 +131,7 @@ func TestSplitIBAN(t *testing.T) {
 
 		k, v, err := SplitIBAN(configuration.IBANDefinition.Example)
 		if err != nil {
-			t.Errorf("[%s] Unexpected error occured: %v", cc, err)
+			t.Errorf("[%s] Unexpected error occurred: %v", cc, err)
 		}
 
 		if len(k) != len(v) {
@@ -156,7 +156,7 @@ func BenchmarkSplitIBAN(b *testing.B) {
 		for n := 0; n < b.N; n++ {
 			_, _, err := SplitIBAN(iban)
 			if err != nil {
-				b.Errorf("Unexpected error occured: %v", err)
+				b.Errorf("Unexpected error occurred: %v", err)
 			}
 		}
 	})
