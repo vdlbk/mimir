@@ -136,3 +136,39 @@ func PrintFormatIBAN(iban string) (string, error) {
 	}
 	return strings.Join(parts, " "), nil
 }
+
+// SplitIBAN splits a given IBAN depending the structure of its country. It returns a list of digit keys, a list
+// that contains each part of the structure or an error if something went wrong.
+func SplitIBAN(iban string) ([]string, []string, error) {
+	iban = standardizeIBAN(iban)
+
+	conf, err := checkIBAN(iban)
+	if err != nil {
+		return nil, nil, err
+	}
+
+	s := conf.IBANDefinition.Structure
+	var keys []string
+	var values []string
+	lastRune := ""
+	currentPart := ""
+	for i, r := range iban {
+		y := string(s[i])
+		if lastRune != "" && lastRune != y {
+			keys = append(keys, string(lastRune))
+			values = append(values, currentPart)
+			currentPart = ""
+		}
+		currentPart += string(r)
+
+		lastRune = y
+	}
+
+	if lastRune != "" {
+		keys = append(keys, string(lastRune))
+		values = append(values, currentPart)
+	}
+
+	return keys, values, nil
+
+}

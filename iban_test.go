@@ -1,6 +1,7 @@
 package mimir
 
 import (
+	"strings"
 	"testing"
 )
 
@@ -106,4 +107,57 @@ func TestPrintFormatIBAN(t *testing.T) {
 		}
 
 	}
+}
+
+// Tests SplitIBAN with default values from countries configuration
+func TestSplitIBAN(t *testing.T) {
+	for _, configuration := range countriesConfiguration {
+
+		cc := configuration.CountryCode.String()
+
+		m := map[string]int{}
+		m[AccountNumberDigitKey] = strings.Count(configuration.IBANDefinition.Structure, AccountNumberDigitKey)
+		m[NationalBankCodeDigitKey] = strings.Count(configuration.IBANDefinition.Structure, NationalBankCodeDigitKey)
+		m[CountryCodeDigitKey] = strings.Count(configuration.IBANDefinition.Structure, CountryCodeDigitKey)
+		m[CheckDigitKey] = strings.Count(configuration.IBANDefinition.Structure, CheckDigitKey)
+		m[NationalIdentificationNumberDigitKey] = strings.Count(configuration.IBANDefinition.Structure, NationalIdentificationNumberDigitKey)
+		m[CurrencyDigitKey] = strings.Count(configuration.IBANDefinition.Structure, CurrencyDigitKey)
+		m[AccountHolderDigitKey] = strings.Count(configuration.IBANDefinition.Structure, AccountHolderDigitKey)
+		m[ReserveNumberDigitKey] = strings.Count(configuration.IBANDefinition.Structure, ReserveNumberDigitKey)
+		m[BranchCodeDigitKey] = strings.Count(configuration.IBANDefinition.Structure, BranchCodeDigitKey)
+		m[AccountTypeDigitKey] = strings.Count(configuration.IBANDefinition.Structure, AccountTypeDigitKey)
+		m[SWIFTBICCodeDigitKey] = strings.Count(configuration.IBANDefinition.Structure, SWIFTBICCodeDigitKey)
+		m[NationalCheckDigitKey] = strings.Count(configuration.IBANDefinition.Structure, NationalCheckDigitKey)
+
+		k, v, err := SplitIBAN(configuration.IBANDefinition.Example)
+		if err != nil {
+			t.Errorf("[%s] Unexpected error occured: %v", cc, err)
+		}
+
+		if len(k) != len(v) {
+			t.Errorf("[%s] Keys and values are not the same length. |keys|= %v; |values|= %v.", cc, len(k), len(v))
+		}
+
+		for i := range k {
+			if n, ok := m[k[i]]; ok {
+				if n != len(v[i]) {
+					t.Errorf("[%s] Missing digit in part %v. want: %v; got: %v", cc, k[i], n, len(v[i]))
+				}
+			}
+		}
+
+	}
+}
+
+func BenchmarkSplitIBAN(b *testing.B) {
+	const iban = "FR1420041010050500013M02606"
+
+	b.Run("SplitIBAN", func(b *testing.B) {
+		for n := 0; n < b.N; n++ {
+			_, _, err := SplitIBAN(iban)
+			if err != nil {
+				b.Errorf("Unexpected error occured: %v", err)
+			}
+		}
+	})
 }

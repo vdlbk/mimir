@@ -17,6 +17,7 @@ type definition struct {
 	Length      int
 	Example     string
 	PrintFormat string
+	Structure   string
 }
 
 type countryCode string

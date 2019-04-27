@@ -135,10 +135,12 @@ var (
 			Length:      24,
 			Example:     "AD1200012030200359100100",
 			PrintFormat: "AD12 0001 2030 2003 5910 0100",
+			Structure:   "cckkbbbbssssaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "00012030200359100100",
+			Length:    20,
+			Example:   "00012030200359100100",
+			Structure: "bbbbssssaaaaaaaaaaaa",
 		},
 	}
 
@@ -153,10 +155,12 @@ var (
 			Length:      23,
 			Example:     "AE070331234567890123456",
 			PrintFormat: "AE07 0331 2345 6789 0123 456",
+			Structure:   "cckkbbbaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  19,
-			Example: "0331234567890123456",
+			Length:    19,
+			Example:   "0331234567890123456",
+			Structure: "bbbaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -171,10 +175,12 @@ var (
 			Length:      28,
 			Example:     "AL47212110090000000235698741",
 			PrintFormat: "AL47 2121 1009 0000 0002 3569 8741",
+			Structure:   "cckkbbbssssxaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "212110090000000235698741",
+			Length:    24,
+			Example:   "212110090000000235698741",
+			Structure: "bbbssssxaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -189,10 +195,12 @@ var (
 			Length:      20,
 			Example:     "AT611904300234573201",
 			PrintFormat: "AT61 1904 3002 3457 3201",
+			Structure:   "cckkbbbbbaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  16,
-			Example: "1904300234573201",
+			Length:    16,
+			Example:   "1904300234573201",
+			Structure: "bbbbbaaaaaaaaaaa",
 		},
 	}
 
@@ -207,10 +215,12 @@ var (
 			Length:      28,
 			Example:     "AZ21NABZ00000000137010001944",
 			PrintFormat: "AZ21 NABZ 0000 0000 1370 1000 1944",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "NABZ00000000137010001944",
+			Length:    24,
+			Example:   "NABZ00000000137010001944",
+			Structure: "wwwwaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -225,10 +235,12 @@ var (
 			Length:      20,
 			Example:     "BA391290079401028494",
 			PrintFormat: "BA39 1290 0794 0102 8494",
+			Structure:   "cckkbbbsssaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  16,
-			Example: "1990440001200279",
+			Length:    16,
+			Example:   "1990440001200279",
+			Structure: "bbbsssaaaaaaaaxx",
 		},
 	}
 
@@ -243,10 +255,12 @@ var (
 			Length:      16,
 			Example:     "BE68539007547034",
 			PrintFormat: "BE68 5390 0754 7034",
+			Structure:   "cckkbbbaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  12,
-			Example: "539007547034",
+			Length:    12,
+			Example:   "539007547034",
+			Structure: "bbbaaaaaaaxx",
 		},
 	}
 
@@ -261,10 +275,12 @@ var (
 			Length:      22,
 			Example:     "BG80BNBG96611020345678",
 			PrintFormat: "BG80 BNBG 9661 1020 3456 78",
+			Structure:   "cckkwwwwssssttaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "BNBG96611020345678",
+			Length:    18,
+			Example:   "BNBG96611020345678",
+			Structure: "wwwwssssttaaaaaaaa",
 		},
 	}
 
@@ -279,10 +295,12 @@ var (
 			Length:      22,
 			Example:     "BH67BMAG00001299123456",
 			PrintFormat: "BH67 BMAG 0000 1299 1234 56",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "BMAG00001299123456",
+			Length:    18,
+			Example:   "BMAG00001299123456",
+			Structure: "wwwwaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -297,10 +315,12 @@ var (
 			Length:      29,
 			Example:     "BR1800360305000010009795493C1",
 			PrintFormat: "BR18 0036 0305 0000 1000 9795 493C 1",
+			Structure:   "cckkbbbbbbbbsssssaaaaaaaaaatn",
 		},
 		BBANDefinition: definition{
-			Length:  25,
-			Example: "00360305000010009795493P1",
+			Length:    25,
+			Example:   "00360305000010009795493P1",
+			Structure: "bbbbbbbbsssssaaaaaaaaaatn",
 		},
 	}
 
@@ -315,10 +335,12 @@ var (
 			Length:      28,
 			Example:     "BY13NBRB3600900000002Z00AB00",
 			PrintFormat: "BY13 NBRB 3600 9000 0000 2Z00 AB00",
+			Structure:   "cckkbbbbssssaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "NBRB3600000000000Z00AB00",
+			Length:    24,
+			Example:   "NBRB3600000000000Z00AB00",
+			Structure: "bbbbssssaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -333,10 +355,12 @@ var (
 			Length:      21,
 			Example:     "CH9300762011623852957",
 			PrintFormat: "CH93 0076 2011 6238 5295 7",
+			Structure:   "cckkbbbbbaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  17,
-			Example: "00762011623852957",
+			Length:    17,
+			Example:   "00762011623852957",
+			Structure: "bbbbbaaaaaaaaaaaa",
 		},
 	}
 
@@ -351,10 +375,12 @@ var (
 			Length:      22,
 			Example:     "CR05015202001026284066",
 			PrintFormat: "CR05 0152 0200 1026 2840 66",
+			Structure:   "cckkobbbaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "015202001026284066",
+			Length:    18,
+			Example:   "015202001026284066",
+			Structure: "obbbaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -369,10 +395,12 @@ var (
 			Length:      28,
 			Example:     "CY17002001280000001200527600",
 			PrintFormat: "CY17 0020 0128 0000 0012 0052 7600",
+			Structure:   "cckkbbbsssssaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "002001280000001200527600",
+			Length:    24,
+			Example:   "002001280000001200527600",
+			Structure: "bbbsssssaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -387,10 +415,12 @@ var (
 			Length:      24,
 			Example:     "CZ6508000000192000145399",
 			PrintFormat: "CZ65 0800 0000 1920 0014 5399",
+			Structure:   "cckkbbbbssssssaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "08000000192000145399",
+			Length:    20,
+			Example:   "08000000192000145399",
+			Structure: "bbbbssssssaaaaaaaaaa",
 		},
 	}
 
@@ -405,10 +435,12 @@ var (
 			Length:      22,
 			Example:     "DE89370400440532013000",
 			PrintFormat: "DE89 3704 0044 0532 0130 00",
+			Structure:   "cckkbbbbbbbbaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "370400440532013000",
+			Length:    18,
+			Example:   "370400440532013000",
+			Structure: "bbbbbbbbaaaaaaaaaa",
 		},
 	}
 
@@ -423,10 +455,12 @@ var (
 			Length:      18,
 			Example:     "DK5000400440116243",
 			PrintFormat: "DK50 0040 0440 1162 43",
+			Structure:   "cckkbbbbaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  14,
-			Example: "00400440116243",
+			Length:    14,
+			Example:   "00400440116243",
+			Structure: "bbbbaaaaaaaaaa",
 		},
 	}
 
@@ -441,10 +475,12 @@ var (
 			Length:      28,
 			Example:     "DO28BAGR00000001212453611324",
 			PrintFormat: "DO28 BAGR 0000 0001 2124 5361 1324",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "BAGR00000001212453611324",
+			Length:    24,
+			Example:   "BAGR00000001212453611324",
+			Structure: "wwwwaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -459,10 +495,12 @@ var (
 			Length:      20,
 			Example:     "EE382200221020145685",
 			PrintFormat: "EE38 2200 2210 2014 5685",
+			Structure:   "cckkbbssaaaaaaaaaaax",
 		},
 		BBANDefinition: definition{
-			Length:  16,
-			Example: "2200221020145685",
+			Length:    16,
+			Example:   "2200221020145685",
+			Structure: "bbssaaaaaaaaaaax",
 		},
 	}
 
@@ -477,10 +515,12 @@ var (
 			Length:      24,
 			Example:     "ES9121000418450200051332",
 			PrintFormat: "ES91 2100 0418 4502 0005 1332",
+			Structure:   "cckkbbbbssssxxaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "21000418450200051332",
+			Length:    20,
+			Example:   "21000418450200051332",
+			Structure: "bbbbssssxxaaaaaaaaaa",
 		},
 	}
 
@@ -495,10 +535,12 @@ var (
 			Length:      18,
 			Example:     "FI2112345600000785",
 			PrintFormat: "FI21 1234 5600 0007 85",
+			Structure:   "cckkbbbbbbaaaaaaax",
 		},
 		BBANDefinition: definition{
-			Length:  14,
-			Example: "12345600000785",
+			Length:    14,
+			Example:   "12345600000785",
+			Structure: "bbbbbbaaaaaaax",
 		},
 	}
 
@@ -513,10 +555,12 @@ var (
 			Length:      18,
 			Example:     "FO6264600001631634",
 			PrintFormat: "FO62 6460 0001 6316 34",
+			Structure:   "cckkbbbbaaaaaaaaax",
 		},
 		BBANDefinition: definition{
-			Length:  14,
-			Example: "64600001631634",
+			Length:    14,
+			Example:   "64600001631634",
+			Structure: "bbbbaaaaaaaaax",
 		},
 	}
 
@@ -531,10 +575,12 @@ var (
 			Length:      27,
 			Example:     "FR1420041010050500013M02606",
 			PrintFormat: "FR14 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -549,10 +595,12 @@ var (
 			Length:      22,
 			Example:     "GB29NWBK60161331926819",
 			PrintFormat: "GB29 NWBK 6016 1331 9268 19",
+			Structure:   "cckkwwwwssssssaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "NWBK60161331926819",
+			Length:    18,
+			Example:   "NWBK60161331926819",
+			Structure: "wwwwssssssaaaaaaaa",
 		},
 	}
 
@@ -567,10 +615,12 @@ var (
 			Length:      22,
 			Example:     "GE29NB0000000101904917",
 			PrintFormat: "GE29 NB00 0000 0101 9049 17",
+			Structure:   "cckkwwaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "NB0000000101904917",
+			Length:    18,
+			Example:   "NB0000000101904917",
+			Structure: "wwaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -585,10 +635,12 @@ var (
 			Length:      23,
 			Example:     "GI75NWBK000000007099453",
 			PrintFormat: "GI75 NWBK 0000 0000 7099 453",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  19,
-			Example: "NWBK000000007099453",
+			Length:    19,
+			Example:   "NWBK000000007099453",
+			Structure: "wwwwaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -603,10 +655,12 @@ var (
 			Length:      18,
 			Example:     "GL8964710001000206",
 			PrintFormat: "GL89 6471 0001 0002 06",
+			Structure:   "cckkbbbbaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  14,
-			Example: "64710001000206",
+			Length:    14,
+			Example:   "64710001000206",
+			Structure: "bbbbaaaaaaaaaa",
 		},
 	}
 
@@ -621,10 +675,12 @@ var (
 			Length:      27,
 			Example:     "GR1601101250000000012300695",
 			PrintFormat: "GR16 0110 1250 0000 0001 2300 695",
+			Structure:   "cckkbbbssssaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "01101250000000012300695",
+			Length:    23,
+			Example:   "01101250000000012300695",
+			Structure: "bbbssssaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -639,10 +695,12 @@ var (
 			Length:      28,
 			Example:     "GT82TRAJ01020000001210029690",
 			PrintFormat: "GT82 TRAJ 0102 0000 0012 1002 9690",
+			Structure:   "cckkwwwwmmttaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "TRAJ01020000001210029690",
+			Length:    24,
+			Example:   "TRAJ01020000001210029690",
+			Structure: "wwwwmmttaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -657,10 +715,12 @@ var (
 			Length:      21,
 			Example:     "HR1210010051863000160",
 			PrintFormat: "HR12 1001 0051 8630 0016 0",
+			Structure:   "cckkbbbbbbbaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  17,
-			Example: "10010051863000160",
+			Length:    17,
+			Example:   "10010051863000160",
+			Structure: "bbbbbbbaaaaaaaaaa",
 		},
 	}
 
@@ -675,10 +735,12 @@ var (
 			Length:      28,
 			Example:     "HU42117730161111101800000000",
 			PrintFormat: "HU42 1177 3016 1111 1018 0000 0000",
+			Structure:   "cckkbbbsssssaaaaaaaaaaaaaaax",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "117730161111101800000000",
+			Length:    24,
+			Example:   "117730161111101800000000",
+			Structure: "bbbsssssaaaaaaaaaaaaaaax",
 		},
 	}
 
@@ -693,10 +755,12 @@ var (
 			Length:      22,
 			Example:     "IE29AIBK93115212345678",
 			PrintFormat: "IE29 AIBK 9311 5212 3456 78",
+			Structure:   "cckkwwwwssssssaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "AIBK93115212345678",
+			Length:    18,
+			Example:   "AIBK93115212345678",
+			Structure: "wwwwssssssaaaaaaaa",
 		},
 	}
 
@@ -711,10 +775,12 @@ var (
 			Length:      23,
 			Example:     "IL620108000000099999999",
 			PrintFormat: "IL62 0108 0000 0009 9999 999",
+			Structure:   "cckkbbbsssaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  19,
-			Example: "0108000000099999999",
+			Length:    19,
+			Example:   "0108000000099999999",
+			Structure: "bbbsssaaaaaaaaaaaaa",
 		},
 	}
 
@@ -729,10 +795,12 @@ var (
 			Length:      23,
 			Example:     "IQ98NBIQ850123456789012",
 			PrintFormat: "IQ98 NBIQ 8501 2345 6789 012",
+			Structure:   "cckkwwwwsssaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  19,
-			Example: "NBIQ850123456789012",
+			Length:    19,
+			Example:   "NBIQ850123456789012",
+			Structure: "wwwwsssaaaaaaaaaaaa",
 		},
 	}
 
@@ -747,10 +815,12 @@ var (
 			Length:      26,
 			Example:     "IS140159260076545510730339",
 			PrintFormat: "IS14 0159 2600 7654 5510 7303 39",
+			Structure:   "cckkbbbbssaaaaaaiiiiiiiiii",
 		},
 		BBANDefinition: definition{
-			Length:  22,
-			Example: "0159260076545510730339",
+			Length:    22,
+			Example:   "0159260076545510730339",
+			Structure: "bbbbssaaaaaaiiiiiiiiii",
 		},
 	}
 
@@ -765,10 +835,12 @@ var (
 			Length:      27,
 			Example:     "IT60X0542811101000000123456",
 			PrintFormat: "IT60 X054 2811 1010 0000 0123 456",
+			Structure:   "cckkxbbbbbsssssaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "X0542811101000000123456",
+			Length:    23,
+			Example:   "X0542811101000000123456",
+			Structure: "xbbbbbsssssaaaaaaaaaaaa",
 		},
 	}
 
@@ -783,10 +855,12 @@ var (
 			Length:      30,
 			Example:     "JO94CBJO0010000000000131000302",
 			PrintFormat: "JO94 CBJO 0010 0000 0000 0131 0003 02",
+			Structure:   "cckkwwwwssssaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  26,
-			Example: "CBJO0010000000000131000302",
+			Length:    26,
+			Example:   "CBJO0010000000000131000302",
+			Structure: "wwwwssssaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -801,10 +875,12 @@ var (
 			Length:      30,
 			Example:     "KW81CBKU0000000000001234560101",
 			PrintFormat: "KW81 CBKU 0000 0000 0000 1234 5601 01",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  26,
-			Example: "CBKU0000000000001234560101",
+			Length:    26,
+			Example:   "CBKU0000000000001234560101",
+			Structure: "wwwwaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -819,10 +895,12 @@ var (
 			Length:      20,
 			Example:     "KZ86125KZT5004100100",
 			PrintFormat: "KZ86 125K ZT50 0410 0100",
+			Structure:   "cckkbbbaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  16,
-			Example: "125KZT5004100100",
+			Length:    16,
+			Example:   "125KZT5004100100",
+			Structure: "bbbaaaaaaaaaaaaa",
 		},
 	}
 
@@ -837,10 +915,12 @@ var (
 			Length:      28,
 			Example:     "LB62099900000001001901229114",
 			PrintFormat: "LB62 0999 0000 0001 0019 0122 9114",
+			Structure:   "cckkbbbbaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "099900000001001901229114",
+			Length:    24,
+			Example:   "099900000001001901229114",
+			Structure: "bbbbaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -855,10 +935,12 @@ var (
 			Length:      32,
 			Example:     "LC55HEMM000100010012001200023015",
 			PrintFormat: "LC55 HEMM 0001 0001 0012 0012 0002 3015",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  28,
-			Example: "HEMM000100010012001200023015",
+			Length:    28,
+			Example:   "HEMM000100010012001200023015",
+			Structure: "wwwwaaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -873,10 +955,12 @@ var (
 			Length:      21,
 			Example:     "LI21088100002324013AA",
 			PrintFormat: "LI21 0881 0000 2324 013A A",
+			Structure:   "cckkbbbbbaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  17,
-			Example: "088100002324013AA",
+			Length:    17,
+			Example:   "088100002324013AA",
+			Structure: "bbbbbaaaaaaaaaaaa",
 		},
 	}
 
@@ -891,10 +975,12 @@ var (
 			Length:      20,
 			Example:     "LT121000011101001000",
 			PrintFormat: "LT12 1000 0111 0100 1000",
+			Structure:   "cckkbbbbbaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  16,
-			Example: "1000011101001000",
+			Length:    16,
+			Example:   "1000011101001000",
+			Structure: "bbbbbaaaaaaaaaaa",
 		},
 	}
 
@@ -909,10 +995,12 @@ var (
 			Length:      20,
 			Example:     "LU280019400644750000",
 			PrintFormat: "LU28 0019 4006 4475 0000",
+			Structure:   "cckkbbbaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  16,
-			Example: "0019400644750000",
+			Length:    16,
+			Example:   "0019400644750000",
+			Structure: "bbbaaaaaaaaaaaaa",
 		},
 	}
 
@@ -927,10 +1015,12 @@ var (
 			Length:      21,
 			Example:     "LV80BANK0000435195001",
 			PrintFormat: "LV80 BANK 0000 4351 9500 1",
+			Structure:   "cckkwwwwaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  17,
-			Example: "BANK0000435195001",
+			Length:    17,
+			Example:   "BANK0000435195001",
+			Structure: "wwwwaaaaaaaaaaaaa",
 		},
 	}
 
@@ -945,10 +1035,12 @@ var (
 			Length:      27,
 			Example:     "MC5811222000010123456789030",
 			PrintFormat: "MC58 1122 2000 0101 2345 6789 030",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "11222000010123456789030",
+			Length:    23,
+			Example:   "11222000010123456789030",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -963,10 +1055,12 @@ var (
 			Length:      24,
 			Example:     "MD24AG000225100013104168",
 			PrintFormat: "MD24 AG00 0225 1000 1310 4168",
+			Structure:   "cckkwwaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "AG000225100013104168",
+			Length:    20,
+			Example:   "AG000225100013104168",
+			Structure: "wwaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -981,10 +1075,12 @@ var (
 			Length:      22,
 			Example:     "ME25505000012345678951",
 			PrintFormat: "ME25 5050 0001 2345 6789 51",
+			Structure:   "cckkbbbaaaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "505000012345678951",
+			Length:    18,
+			Example:   "505000012345678951",
+			Structure: "bbbaaaaaaaaaaaaaxx",
 		},
 	}
 
@@ -999,10 +1095,12 @@ var (
 			Length:      19,
 			Example:     "MK07250120000058984",
 			PrintFormat: "MK07 2501 2000 0058 984",
+			Structure:   "cckkbbbaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  15,
-			Example: "250120000058984",
+			Length:    15,
+			Example:   "250120000058984",
+			Structure: "bbbaaaaaaaaaaxx",
 		},
 	}
 
@@ -1017,10 +1115,12 @@ var (
 			Length:      27,
 			Example:     "MR1300020001010000123456753",
 			PrintFormat: "MR13 0002 0001 0100 0012 3456 753",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "00020001010000123456753",
+			Length:    23,
+			Example:   "00020001010000123456753",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1035,10 +1135,12 @@ var (
 			Length:      31,
 			Example:     "MT84MALT011000012345MTLCAST001S",
 			PrintFormat: "MT84 MALT 0110 0001 2345 MTLC AST0 01S",
+			Structure:   "cckkwwwwsssssaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  27,
-			Example: "MALT011000012345MTLCAST001S",
+			Length:    27,
+			Example:   "MALT011000012345MTLCAST001S",
+			Structure: "wwwwsssssaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1053,10 +1155,12 @@ var (
 			Length:      30,
 			Example:     "MU17BOMM0101101030300200000MUR",
 			PrintFormat: "MU17 BOMM 0101 1010 3030 0200 000M UR",
+			Structure:   "cckkbbbbbbssaaaaaaaaaaaaooommm",
 		},
 		BBANDefinition: definition{
-			Length:  26,
-			Example: "BOMM0101101030300200000MUR",
+			Length:    26,
+			Example:   "BOMM0101101030300200000MUR",
+			Structure: "bbbbbbssaaaaaaaaaaaaooommm",
 		},
 	}
 
@@ -1071,10 +1175,12 @@ var (
 			Length:      18,
 			Example:     "NL91ABNA0417164300",
 			PrintFormat: "NL91 ABNA 0417 1643 00",
+			Structure:   "cckkwwwwaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  14,
-			Example: "ABNA0417164300",
+			Length:    14,
+			Example:   "ABNA0417164300",
+			Structure: "wwwwaaaaaaaaaa",
 		},
 	}
 
@@ -1089,10 +1195,12 @@ var (
 			Length:      15,
 			Example:     "NO9386011117947",
 			PrintFormat: "NO93 8601 1117 947",
+			Structure:   "cckkbbbbaaaaaax",
 		},
 		BBANDefinition: definition{
-			Length:  11,
-			Example: "86011117947",
+			Length:    11,
+			Example:   "86011117947",
+			Structure: "bbbbaaaaaax",
 		},
 	}
 
@@ -1107,10 +1215,12 @@ var (
 			Length:      24,
 			Example:     "PK36SCBL0000001123456702",
 			PrintFormat: "PK36 SCBL 0000 0011 2345 6702",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "SCBL0000001123456702",
+			Length:    20,
+			Example:   "SCBL0000001123456702",
+			Structure: "wwwwaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1125,10 +1235,12 @@ var (
 			Length:      28,
 			Example:     "PL61109010140000071219812874",
 			PrintFormat: "PL61 1090 1014 0000 0712 1981 2874",
+			Structure:   "cckkbbbssssxaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "109010140000071219812874",
+			Length:    24,
+			Example:   "109010140000071219812874",
+			Structure: "bbbssssxaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1143,10 +1255,12 @@ var (
 			Length:      29,
 			Example:     "PS92PALS000000000400123456702",
 			PrintFormat: "PS92 PALS 0000 0000 0400 1234 5670 2",
+			Structure:   "cckkwwwwoooooooooaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  25,
-			Example: "PALS000000000400123456702",
+			Length:    25,
+			Example:   "PALS000000000400123456702",
+			Structure: "wwwwoooooooooaaaaaaaaaaaa",
 		},
 	}
 
@@ -1161,10 +1275,12 @@ var (
 			Length:      25,
 			Example:     "PT50000201231234567890154",
 			PrintFormat: "PT50 0002 0123 1234 5678 9015 4",
+			Structure:   "cckkbbbbssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  21,
-			Example: "000201231234567890154",
+			Length:    21,
+			Example:   "000201231234567890154",
+			Structure: "bbbbssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1179,10 +1295,12 @@ var (
 			Length:      29,
 			Example:     "QA58DOHB00001234567890ABCDEFG",
 			PrintFormat: "QA58 DOHB 0000 1234 5678 90AB CDEF G",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  25,
-			Example: "DOHB00001234567890ABCDEFG",
+			Length:    25,
+			Example:   "DOHB00001234567890ABCDEFG",
+			Structure: "wwwwaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1197,10 +1315,12 @@ var (
 			Length:      24,
 			Example:     "RO49AAAA1B31007593840000",
 			PrintFormat: "RO49 AAAA 1B31 0075 9384 0000",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "AAAA1B31007593840000",
+			Length:    20,
+			Example:   "AAAA1B31007593840000",
+			Structure: "wwwwaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1215,10 +1335,12 @@ var (
 			Length:      22,
 			Example:     "RS35260005601001611379",
 			PrintFormat: "RS35 2600 0560 1001 6113 79",
+			Structure:   "cckkbbbaaaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "260005601001611379",
+			Length:    18,
+			Example:   "260005601001611379",
+			Structure: "bbbaaaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1233,10 +1355,12 @@ var (
 			Length:      24,
 			Example:     "SA0380000000608010167519",
 			PrintFormat: "SA03 8000 0000 6080 1016 7519",
+			Structure:   "cckkbbaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "80000000608010167519",
+			Length:    20,
+			Example:   "80000000608010167519",
+			Structure: "bbaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1251,10 +1375,12 @@ var (
 			Length:      31,
 			Example:     "SC18SSCB11010000000000001497USD",
 			PrintFormat: "SC18 SSCB 1101 0000 0000 0000 1497 USD",
+			Structure:   "cckkwwwwssssaaaaaaaaaaaaaaaammm",
 		},
 		BBANDefinition: definition{
-			Length:  27,
-			Example: "SSCB11010000000000001497USD",
+			Length:    27,
+			Example:   "SSCB11010000000000001497USD",
+			Structure: "wwwwssssaaaaaaaaaaaaaaaammm",
 		},
 	}
 
@@ -1269,10 +1395,12 @@ var (
 			Length:      24,
 			Example:     "SE4550000000058398257466",
 			PrintFormat: "SE45 5000 0000 0583 9825 7466",
+			Structure:   "cckkbbbaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "50000000058398257466",
+			Length:    20,
+			Example:   "50000000058398257466",
+			Structure: "bbbaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1287,10 +1415,12 @@ var (
 			Length:      19,
 			Example:     "SI56263300012039086",
 			PrintFormat: "SI56 2633 0001 2039 086",
+			Structure:   "cckkbbsssaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  15,
-			Example: "263300012039086",
+			Length:    15,
+			Example:   "263300012039086",
+			Structure: "bbsssaaaaaaaaxx",
 		},
 	}
 
@@ -1305,10 +1435,12 @@ var (
 			Length:      24,
 			Example:     "SK3112000000198742637541",
 			PrintFormat: "SK31 1200 0000 1987 4263 7541",
+			Structure:   "cckkbbbbssssssaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "12000000198742637541",
+			Length:    20,
+			Example:   "12000000198742637541",
+			Structure: "bbbbssssssaaaaaaaaaa",
 		},
 	}
 
@@ -1323,10 +1455,12 @@ var (
 			Length:      27,
 			Example:     "SM86U0322509800000000270100",
 			PrintFormat: "SM86 U032 2509 8000 0000 0270 100",
+			Structure:   "cckkxbbbbbsssssaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "U0322509800000000270100",
+			Length:    23,
+			Example:   "U0322509800000000270100",
+			Structure: "xbbbbbsssssaaaaaaaaaaaa",
 		},
 	}
 
@@ -1341,14 +1475,12 @@ var (
 			Length:      25,
 			Example:     "ST32000200010192194210112",
 			PrintFormat: "ST32 0002 0001 0192 1942 1011 2",
-
-			// Given the Swift IBAN Registry the following IBAN should be valid but they're not. The correct checksum is 32, not 68.
-			//Example:     "ST68000200010192194210112",
-			//PrintFormat: "ST68 0002 0001 0192 1942 1011 2",
+			Structure:   "cckkbbbbssssaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  21,
-			Example: "000200010192194210112",
+			Length:    21,
+			Example:   "000200010192194210112",
+			Structure: "bbbbssssaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1363,10 +1495,12 @@ var (
 			Length:      28,
 			Example:     "SV62CENR00000000000000700025",
 			PrintFormat: "SV 62 CENR 00000000000000700025",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "CENR00000000000000700025",
+			Length:    24,
+			Example:   "CENR00000000000000700025",
+			Structure: "wwwwaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1381,10 +1515,12 @@ var (
 			Length:      23,
 			Example:     "TL380080012345678910157",
 			PrintFormat: "TL38 0080 0123 4567 8910 157",
+			Structure:   "cckkbbbaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  19,
-			Example: "0080012345678910157",
+			Length:    19,
+			Example:   "0080012345678910157",
+			Structure: "bbbaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1399,10 +1535,12 @@ var (
 			Length:      24,
 			Example:     "TN5910006035183598478831",
 			PrintFormat: "TN59 1000 6035 1835 9847 8831",
+			Structure:   "cckkbbsssaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "10006035183598478831",
+			Length:    20,
+			Example:   "10006035183598478831",
+			Structure: "bbsssaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1417,10 +1555,12 @@ var (
 			Length:      26,
 			Example:     "TR330006100519786457841326",
 			PrintFormat: "TR33 0006 1005 1978 6457 8413 26",
+			Structure:   "cckkbbbbboaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  22,
-			Example: "0006100519786457841326",
+			Length:    22,
+			Example:   "0006100519786457841326",
+			Structure: "bbbbboaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1435,10 +1575,12 @@ var (
 			Length:      29,
 			Example:     "UA213223130000026007233566001",
 			PrintFormat: "UA21 3223 1300 0002 6007 2335 6600 1",
+			Structure:   "cckkbbbbbbaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  25,
-			Example: "3223130000026007233566001",
+			Length:    25,
+			Example:   "3223130000026007233566001",
+			Structure: "bbbbbbaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1453,10 +1595,12 @@ var (
 			Length:      22,
 			Example:     "VA59001123000012345678",
 			PrintFormat: "VA59 001 1230 0001 2345 678",
+			Structure:   "cckkbbbaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  18,
-			Example: "001123000012345678",
+			Length:    18,
+			Example:   "001123000012345678",
+			Structure: "bbbaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1471,10 +1615,12 @@ var (
 			Length:      24,
 			Example:     "VG96VPVG0000012345678901",
 			PrintFormat: "VG96 VPVG 0000 0123 4567 8901",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "VPVG0000012345678901",
+			Length:    20,
+			Example:   "VPVG0000012345678901",
+			Structure: "wwwwaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1489,10 +1635,12 @@ var (
 			Length:      20,
 			Example:     "XK051212012345678906",
 			PrintFormat: "XK05 1212 0123 4567 8906",
+			Structure:   "cckkbbbbaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  16,
-			Example: "1212012345678906",
+			Length:    16,
+			Example:   "1212012345678906",
+			Structure: "bbbbaaaaaaaaaaaa",
 		},
 	}
 
@@ -1507,10 +1655,12 @@ var (
 			Length:      27,
 			Example:     "GF4120041010050500013M02606",
 			PrintFormat: "GF41 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1525,10 +1675,12 @@ var (
 			Length:      27,
 			Example:     "GP1120041010050500013M02606",
 			PrintFormat: "GP11 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1543,10 +1695,12 @@ var (
 			Length:      27,
 			Example:     "MQ5120041010050500013M02606",
 			PrintFormat: "MQ51 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1561,10 +1715,12 @@ var (
 			Length:      27,
 			Example:     "RE4220041010050500013M02606",
 			PrintFormat: "RE42 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1579,10 +1735,12 @@ var (
 			Length:      27,
 			Example:     "PF5720041010050500013M02606",
 			PrintFormat: "PF57 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1597,10 +1755,12 @@ var (
 			Length:      27,
 			Example:     "TF2120041010050500013M02606",
 			PrintFormat: "TF21 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1615,10 +1775,12 @@ var (
 			Length:      27,
 			Example:     "YT3120041010050500013M02606",
 			PrintFormat: "YT31 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1633,10 +1795,12 @@ var (
 			Length:      27,
 			Example:     "NC8420041010050500013M02606",
 			PrintFormat: "NC84 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1651,10 +1815,12 @@ var (
 			Length:      27,
 			Example:     "BL6820041010050500013M02606",
 			PrintFormat: "BL68 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1669,10 +1835,12 @@ var (
 			Length:      27,
 			Example:     "MF8420041010050500013M02606",
 			PrintFormat: "MF84 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1687,10 +1855,12 @@ var (
 			Length:      27,
 			Example:     "PM3620041010050500013M02606",
 			PrintFormat: "PM36 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1705,10 +1875,12 @@ var (
 			Length:      27,
 			Example:     "WF9120041010050500013M02606",
 			PrintFormat: "WF91 2004 1010 0505 0001 3M02 606",
+			Structure:   "cckkbbbbbsssssaaaaaaaaaaaxx",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20041010050500013M02606",
+			Length:    23,
+			Example:   "20041010050500013M02606",
+			Structure: "bbbbbsssssaaaaaaaaaaaxx",
 		},
 	}
 
@@ -1723,10 +1895,12 @@ var (
 			Length:      18,
 			Example:     "AX2112345600000785",
 			PrintFormat: "AX21 1234 5600 0007 85",
+			Structure:   "cckkbbbbbbaaaaaaax",
 		},
 		BBANDefinition: definition{
-			Length:  14,
-			Example: "12345600000785",
+			Length:    14,
+			Example:   "12345600000785",
+			Structure: "bbbbbbaaaaaaax",
 		},
 	}
 
@@ -1741,10 +1915,12 @@ var (
 			Length:      24,
 			Example:     "DZ8022738346840171372597",
 			PrintFormat: "DZ80 2273 8346 8401 7137 2597",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  20,
-			Example: "22738346840171372597",
+			Length:    20,
+			Example:   "22738346840171372597",
+			Structure: "aaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1759,10 +1935,12 @@ var (
 			Length:      25,
 			Example:     "AO27226781323520060113196",
 			PrintFormat: "AO27 2267 8132 3520 0601 1319 6",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  21,
-			Example: "226781323520060113196",
+			Length:    21,
+			Example:   "226781323520060113196",
+			Structure: "aaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1777,10 +1955,12 @@ var (
 			Length:      28,
 			Example:     "BJ73B99932227891101178429964",
 			PrintFormat: "BJ73 B999 3222 7891 1011 7842 9964",
+			Structure:   "cckkbaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "B99932227891101178429964",
+			Length:    24,
+			Example:   "B99932227891101178429964",
+			Structure: "baaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1795,10 +1975,12 @@ var (
 			Length:      27,
 			Example:     "BF1030134020015400945000643",
 			PrintFormat: "BF10 3013 4020 0154 0094 5000 643",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "30134020015400945000643",
+			Length:    23,
+			Example:   "30134020015400945000643",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1813,10 +1995,12 @@ var (
 			Length:      16,
 			Example:     "BI43201011067444",
 			PrintFormat: "BI43 2010 1106 7444",
+			Structure:   "cckkaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  12,
-			Example: "201011067444",
+			Length:    12,
+			Example:   "201011067444",
+			Structure: "aaaaaaaaaaaa",
 		},
 	}
 
@@ -1831,10 +2015,12 @@ var (
 			Length:      27,
 			Example:     "CM2110003001000500000605306",
 			PrintFormat: "CM21 1000 3001 0005 0000 0605 306",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "10003001000500000605306",
+			Length:    23,
+			Example:   "10003001000500000605306",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1849,10 +2035,12 @@ var (
 			Length:      25,
 			Example:     "CV64000300004547069110176",
 			PrintFormat: "CV64 0003 0000 4547 0691 1017 6",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  21,
-			Example: "000300004547069110176",
+			Length:    21,
+			Example:   "000300004547069110176",
+			Structure: "aaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1867,10 +2055,12 @@ var (
 			Length:      27,
 			Example:     "CF4220001000010120069700160",
 			PrintFormat: "CF42 2000 1000 0101 2006 9700 160",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "20001000010120069700160",
+			Length:    23,
+			Example:   "20001000010120069700160",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1885,10 +2075,12 @@ var (
 			Length:      27,
 			Example:     "TD7200020000556026733000006",
 			PrintFormat: "TD72 0002 0000 5560 2673 3000 006",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "00020000556026733000006",
+			Length:    23,
+			Example:   "00020000556026733000006",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1903,10 +2095,12 @@ var (
 			Length:      27,
 			Example:     "KM4640002000055602673300064",
 			PrintFormat: "KM46 4000 2000 0556 0267 3300 064",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "40002000055602673300064",
+			Length:    23,
+			Example:   "40002000055602673300064",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1921,10 +2115,12 @@ var (
 			Length:      27,
 			Example:     "CG5230011000202151234567890",
 			PrintFormat: "CG52 3001 1000 2021 5123 4567 890",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "30011000202151234567890",
+			Length:    23,
+			Example:   "30011000202151234567890",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1939,10 +2135,12 @@ var (
 			Length:      27,
 			Example:     "DJ2110002010010409943020008",
 			PrintFormat: "DJ21 1000 2010 0104 0994 3020 008",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "10002010010409943020008",
+			Length:    23,
+			Example:   "10002010010409943020008",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1957,10 +2155,12 @@ var (
 			Length:      27,
 			Example:     "EG1100006001880800100014553",
 			PrintFormat: "EG11 0000 6001 8808 0010 0014 553",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "00006001880800100014553",
+			Length:    23,
+			Example:   "00006001880800100014553",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1975,10 +2175,12 @@ var (
 			Length:      27,
 			Example:     "GA2140002000055602673300064",
 			PrintFormat: "GA21 4000 2000 0556 0267 3300 064",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "40002000055602673300064",
+			Length:    23,
+			Example:   "40002000055602673300064",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -1993,10 +2195,12 @@ var (
 			Length:      25,
 			Example:     "GW04GW1430010181800637601",
 			PrintFormat: "GW04 GW14 3001 0181 8006 3760 1",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  21,
-			Example: "GW1430010181800637601",
+			Length:    21,
+			Example:   "GW1430010181800637601",
+			Structure: "aaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2011,10 +2215,12 @@ var (
 			Length:      28,
 			Example:     "HN25VOWU27346509718683143911",
 			PrintFormat: "HN25 VOWU 2734 6509 7186 8314 3911",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "VOWU27346509718683143911",
+			Length:    24,
+			Example:   "VOWU27346509718683143911",
+			Structure: "wwwwaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2029,10 +2235,12 @@ var (
 			Length:      26,
 			Example:     "IR710570029971601460641001",
 			PrintFormat: "IR71 0570 0299 7160 1460 6410 01",
+			Structure:   "cckkbbbbaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  22,
-			Example: "0570029971601460641001",
+			Length:    22,
+			Example:   "0570029971601460641001",
+			Structure: "bbbbaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2047,10 +2255,12 @@ var (
 			Length:      28,
 			Example:     "CI80C28456236523184811313497",
 			PrintFormat: "CI80 C284 5623 6523 1848 1131 3497",
+			Structure:   "cckkbaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "C28456236523184811313497",
+			Length:    24,
+			Example:   "C28456236523184811313497",
+			Structure: "baaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2065,10 +2275,12 @@ var (
 			Length:      27,
 			Example:     "MG4600005030010101914016056",
 			PrintFormat: "MG46 0000 5030 0101 0191 4016 056",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  23,
-			Example: "00005030010101914016056",
+			Length:    23,
+			Example:   "00005030010101914016056",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2083,10 +2295,12 @@ var (
 			Length:      28,
 			Example:     "ML03D00890170001002120000447",
 			PrintFormat: "ML03 D008 9017 0001 0021 2000 0447",
+			Structure:   "cckkbaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "D00890170001002120000447",
+			Length:    24,
+			Example:   "D00890170001002120000447",
+			Structure: "baaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2101,10 +2315,12 @@ var (
 			Length:      28,
 			Example:     "MA64011519000001205000534921",
 			PrintFormat: "MA64 0115 1900 0001 2050 0053 4921",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "011519000001205000534921",
+			Length:    24,
+			Example:   "011519000001205000534921",
+			Structure: "aaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2119,10 +2335,12 @@ var (
 			Length:      25,
 			Example:     "MZ59000100000011834194157",
 			PrintFormat: "MZ59 0001 0000 0011 8341 9415 7",
+			Structure:   "cckkaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  21,
-			Example: "000100000011834194157",
+			Length:    21,
+			Example:   "000100000011834194157",
+			Structure: "aaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2137,10 +2355,12 @@ var (
 			Length:      32,
 			Example:     "NI62ABCD157382578924464167824447",
 			PrintFormat: "NI62 ABCD 1573 8257 8924 4641 6782 4447",
+			Structure:   "cckkwwwwaaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  28,
-			Example: "ABCD157382578924464167824447",
+			Length:    28,
+			Example:   "ABCD157382578924464167824447",
+			Structure: "wwwwaaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2155,10 +2375,12 @@ var (
 			Length:      28,
 			Example:     "NE58NE0380100100130305000268",
 			PrintFormat: "NE58 NE03 8010 0100 1303 0500 0268",
+			Structure:   "cckkbbaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "NE0380100100130305000268",
+			Length:    24,
+			Example:   "NE0380100100130305000268",
+			Structure: "bbaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2173,10 +2395,12 @@ var (
 			Length:      28,
 			Example:     "SN21S00100152000048500003035",
 			PrintFormat: "SN21 S001 0015 2000 0485 0000 3035",
+			Structure:   "cckkbaaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "S00100152000048500003035",
+			Length:    24,
+			Example:   "S00100152000048500003035",
+			Structure: "baaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 
@@ -2191,10 +2415,12 @@ var (
 			Length:      28,
 			Example:     "TG53TG0090604310346500400070",
 			PrintFormat: "TG53 TG00 9060 4310 3465 0040 0070",
+			Structure:   "cckkbbaaaaaaaaaaaaaaaaaaaaaa",
 		},
 		BBANDefinition: definition{
-			Length:  24,
-			Example: "TG0090604310346500400070",
+			Length:    24,
+			Example:   "TG0090604310346500400070",
+			Structure: "bbaaaaaaaaaaaaaaaaaaaaaa",
 		},
 	}
 )

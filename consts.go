@@ -1,5 +1,6 @@
 package mimir
 
+// Errors
 const (
 	// ErrIBANTooshort is the error when a IBAN is too short for the validation process
 	ErrIBANTooshort = mimirError("IBAN is too short")
@@ -19,3 +20,19 @@ type mimirError string
 func (m mimirError) Error() string {
 	return string(m)
 }
+
+// Structure digit keys
+const (
+	AccountNumberDigitKey                = "a" // alphanumeric
+	NationalBankCodeDigitKey             = "b" // numeric
+	CountryCodeDigitKey                  = "c" // alphabetic
+	CheckDigitKey                        = "k" // checksum
+	NationalIdentificationNumberDigitKey = "i"
+	CurrencyDigitKey                     = "m" // alphanumeric
+	AccountHolderDigitKey                = "n"
+	ReserveNumberDigitKey                = "o" // always 0
+	BranchCodeDigitKey                   = "s" // counter code
+	AccountTypeDigitKey                  = "t"
+	SWIFTBICCodeDigitKey                 = "w" // alphanumeric
+	NationalCheckDigitKey                = "x" // numeric
+)
