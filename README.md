@@ -17,8 +17,10 @@ Stay tuned for updates !
 | ----------- | ----------------- |
 | `IsIBANValid` | Validate an IBAN  |
 | `GetCheckDigits` | Compute check digits from a valid IBAN  |
+| `FormatIBAN` | Format IBAN based on its structure  |
 | `PrintFormatIBAN` | Format IBAN as it would be printed  |
-| `GetCountryConfiguration` | Get country configuration (ISO 13616-Compliant IBAN Formats)  |
+| `GetCountryConfiguration` | Get country configuration and informations  |
+| `SplitIBAN` | Split the IBAN based on its structure  |
 
 ### Supported countries
 
