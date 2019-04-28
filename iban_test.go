@@ -68,11 +68,11 @@ func TestCheckIBAN(t *testing.T) {
 	}
 }
 
-// Tests GetCheckDigits with default values from countries configuration
-func TestGetCheckDigits(t *testing.T) {
+// Tests GetIBANCheckDigits with default values from countries configuration
+func TestGetIBANCheckDigits(t *testing.T) {
 	for _, configuration := range countriesConfiguration {
 
-		check, iban, err := GetCheckDigits(configuration.IBANDefinition.Example)
+		check, iban, err := GetIBANCheckDigits(configuration.IBANDefinition.Example)
 		if err != nil {
 			t.Errorf("Unexpected error occurred: %v", err)
 		}

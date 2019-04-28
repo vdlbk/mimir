@@ -43,9 +43,9 @@ func IsIBANValid(iban string) error {
 	return nil
 }
 
-// GetCheckDigits compute the check digits from a given IBAN.
+// GetIBANCheckDigits compute the check digits from a given IBAN.
 // Returns the computed digits, the IBAN set with the check digits or an error if something goes wrong.
-func GetCheckDigits(iban string) (string, string, error) {
+func GetIBANCheckDigits(iban string) (string, string, error) {
 	iban = standardizeIBAN(iban)
 
 	_, err := checkIBAN(iban)

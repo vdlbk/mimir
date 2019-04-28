@@ -2,7 +2,7 @@
 
 ## What is Mimir ?
 
-**Mimir** is a lightweight library that exposes some functions to validate some banking informations.
+**Mimir** is a lightweight library that exposes some functions to validate banking informations.
 
 ### Disclaimer
 
@@ -16,7 +16,7 @@ Stay tuned for updates !
 | Method Name | Short Description |
 | ----------- | ----------------- |
 | `IsIBANValid` | Validate an IBAN  |
-| `GetCheckDigits` | Compute check digits from a valid IBAN  |
+| `GetIBANCheckDigits` | Compute check digits from a valid IBAN  |
 | `FormatIBAN` | Format IBAN based on its structure  |
 | `PrintFormatIBAN` | Format IBAN as it would be printed  |
 | `GetCountryConfiguration` | Get country configuration and informations  |
