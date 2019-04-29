@@ -13,14 +13,24 @@ This library is still in development, so it might be possible that some methods 
 As the project just started, it is quite poor in methods.    
 Stay tuned for updates !
 
+### IBAN Methods 
+
 | Method Name | Short Description |
 | ----------- | ----------------- |
 | `IsIBANValid` | Validate an IBAN  |
-| `GetIBANCheckDigits` | Compute check digits from a valid IBAN  |
+| `GetIBANCheckDigits` | Compute or fix check digits from an IBAN  |
 | `FormatIBAN` | Format IBAN based on its structure  |
 | `PrintFormatIBAN` | Format IBAN as it would be printed  |
 | `GetCountryConfiguration` | Get country configuration and informations  |
 | `SplitIBAN` | Split the IBAN based on its structure  |
+
+### ABA Routing Number Methods 
+
+| Method Name | Short Description |
+| ----------- | ----------------- |
+| `IsABARTNValid` | Validate an ABA  |
+| `GetABARTNCheckDigit` | Compute or fix check digits for an ABA  |
+| `SplitABARTN` | Split the ABA based on its structure  |
 
 ### Supported countries
 
