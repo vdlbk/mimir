@@ -19,6 +19,15 @@ const (
 
 	// ErrABAInvalidChecksum is the error when a ABA Routing Number is invalid
 	ErrABAInvalidChecksum = mimirError("ABA Routing Number invalid checksum")
+
+	// ErrPaymentCardInvalidChecksum is the error when a Payment card number is invalid
+	ErrPaymentCardDoesNotMatchAnyIssuer = mimirError("Payment card does not match any issuer")
+
+	// ErrPaymentCardTooShort is the error when a Payment card number is too short for the validation process
+	ErrPaymentCardTooShort = mimirError("Payment card number is too short")
+
+	// ErrIssuerDoesNotExist is the error when you lookup for an issuer that does not exists
+	ErrIssuerDoesNotExist = mimirError("Issuer does not exist")
 )
 
 type mimirError string
@@ -49,3 +58,11 @@ const (
 	ABAInstitutionIdentifierDigitKey       = "a" // numeric
 	CheckABADigitKey                       = "k" // checksum // numeric
 )
+
+// Payment card - Structure digit keys
+//const (
+//	MIIPCDigitKey           = "m" // numeric
+//	IINPCDigitKey           = "i" // numeric
+//	AccountNumberPCDigitKey = "a" // numeric
+//	CheckPCDigitKey         = "k" // numeric
+//)

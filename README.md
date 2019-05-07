@@ -6,14 +6,16 @@
 
 ### Disclaimer
 
-This library is still in development, so it might be possible that some methods change over time. 
++  This library is still in development, so it might be possible that some methods change over time. 
++  This library does not store any of your personal data, you can use it freely.
 
 ## Methods available
 
-As the project just started, it is quite poor in methods.    
-Stay tuned for updates !
+If you experienced troubles with one of our methods, don't hesitate telling us by submitting an issue.
 
-### IBAN Methods 
+### Bank account numbers
+
+#### IBAN Methods 
 
 | Method Name | Short Description |
 | ----------- | ----------------- |
@@ -24,7 +26,7 @@ Stay tuned for updates !
 | `GetCountryConfiguration` | Get country configuration and informations  |
 | `SplitIBAN` | Split the IBAN based on its structure  |
 
-### ABA Routing Number Methods 
+#### ABA Routing Number Methods 
 
 | Method Name | Short Description |
 | ----------- | ----------------- |
@@ -32,9 +34,24 @@ Stay tuned for updates !
 | `GetABARTNCheckDigit` | Compute or fix check digits for an ABA  |
 | `SplitABARTN` | Split the ABA based on its structure  |
 
-### Supported countries
+#### Supported countries
 
 Please visit [SUPPORTED_COUNTRIES.md](https://github.com/vdlbk/mimir/blob/master/SUPPORTED_COUNTRIES.md)
+
+### Payment card numbers
+
+All cards in the examples has been generated randomly
+
+#### Methods
+| Method Name | Short Description |
+| ----------- | ----------------- |
+| `MatchPaymentCard` | Validate a payment card number from a specific card issuer or not  |
+| `GetPaymentCardCheckDigits` | Compute or fix check digits from a payment card  |
+| `GetPaymentCardConfiguration` | Get payment cards information from an issuer  |
+
+#### Supported cards
+
+Please visit [SUPPORTED_CARDS.md](https://github.com/vdlbk/mimir/blob/master/SUPPORTED_CARDS.md)
 
 ## Use
 
@@ -63,5 +80,27 @@ func main(){
 	
 	err = mimir.IsIBANValid(badIBAN)
 	fmt.Println(err) // IBAN invalid checksum
+}
+```
+
+#### Validate a payment card number
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/vdlbk/mimir"
+)
+
+func main(){
+	number := "345752218692713"
+	
+	r, err := mimir.MatchPaymentCard(number, mimir.AmericanExpress)
+	fmt.Println(r, err) // [American Express], nil
+	
+	badNumber := "foobar"
+	
+	r, err = mimir.MatchPaymentCard(badNumber, mimir.AmericanExpress)
+	fmt.Println(r, err) // nil, Payment card does not match any issuer
 }
 ```
