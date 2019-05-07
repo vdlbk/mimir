@@ -67,20 +67,21 @@ func MatchPaymentCard(number string, issuers ...string) ([]string, error) {
 // GetPaymentCardCheckDigits compute the check digits from a given payment card number.
 // If you need to compute the check digit for 1234, please add an extra 0 at the end, otherwise, it's going to compute the
 // check digit for 123. The last digit is ignored.
+//Returns the computed digit, the payment card number set with the check digit or an error if something goes wrong.
+//
 // Examples :
 // 12340 	=> 	4, 12344
 // 1234 	=> 	6, 1236
-// Returns the computed digit, the payment card number set with the check digit or an error if something goes wrong.
 func GetPaymentCardCheckDigits(number string) (string, string, error) {
 	if len(number) == 0 {
 		return "", "", ErrPaymentCardTooShort
 	}
-	if r := luhn(number); r == 0 {
+	r := luhn(number)
+	if r == 0 {
 		return "0", number[:len(number)-1] + "0", nil
-	} else {
-		checksum := 10 - r
-		return strconv.FormatInt(checksum, 10), number[:len(number)-1] + strconv.FormatInt(checksum, 10), nil
 	}
+	checksum := 10 - r
+	return strconv.FormatInt(checksum, 10), number[:len(number)-1] + strconv.FormatInt(checksum, 10), nil
 }
 
 func sanitizeCardNumber(number string) string {
