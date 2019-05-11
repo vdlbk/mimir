@@ -54,7 +54,7 @@ func GetIBANCheckDigits(iban string) (string, string, error) {
 	}
 
 	// Replace the checks digit by checkDigitSize x '0'
-	iban = iban[:countryCodeSize] + strings.Repeat("0", checkDigitSize) + iban[countryCodeSize+2:]
+	iban = iban[:countryCodeSize] + strings.Repeat("0", checkDigitSize) + iban[countryCodeSize+checkDigitSize:]
 
 	// Move the `numberOfDigitRearranged` first characters to the end
 	rearrangedIBAN := iban[numberOfDigitRearranged:] + iban[:numberOfDigitRearranged]

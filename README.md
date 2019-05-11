@@ -2,12 +2,12 @@
 
 ## What is Mimir ?
 
-**Mimir** is a lightweight library that exposes some functions to validate banking informations.
+**Mimir** is a lightweight library that exposes some functions to validate banking informations.    
+It does not store any of your personal data, you can use it freely.
 
 ### Disclaimer
 
-+  This library is still in development, so it might be possible that some methods change over time. 
-+  This library does not store any of your personal data, you can use it freely.
+This library is still in development, so it might be possible that some methods change over time. 
 
 ## Methods available
 

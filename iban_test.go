@@ -1,6 +1,7 @@
 package mimir
 
 import (
+	"fmt"
 	"strings"
 	"testing"
 )
@@ -160,4 +161,22 @@ func BenchmarkSplitIBAN(b *testing.B) {
 			}
 		}
 	})
+}
+
+// Examples
+
+func ExampleIsIBANValid() {
+	fmt.Println(IsIBANValid("FR1420041010050500013M02606"))
+	fmt.Println(IsIBANValid("FR1420041010050500013M02605"))
+	// Output:
+	// <nil>
+	// IBAN invalid checksum
+}
+
+func ExampleGetIBANCheckDigits() {
+	fmt.Println(GetIBANCheckDigits("FR1420041010050500013M02606"))
+	fmt.Println(GetIBANCheckDigits("FR0020041010050500013M02606"))
+	// Output:
+	// 14 FR1420041010050500013M02606 <nil>
+	// 14 FR1420041010050500013M02606 <nil>
 }

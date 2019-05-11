@@ -1,6 +1,7 @@
 package mimir
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -158,4 +159,26 @@ func TestGetPaymentCardCheckDigitsWithCustomValues(t *testing.T) {
 			)
 		}
 	}
+}
+
+// Examples
+
+func ExampleGetPaymentCardCheckDigits() {
+	fmt.Println(GetPaymentCardCheckDigits("12340"))
+	fmt.Println(GetPaymentCardCheckDigits("1234"))
+	// Output:
+	// 4 12344 <nil>
+	// 6 1236 <nil>
+}
+
+func ExampleMatchPaymentCard() {
+	fmt.Println(MatchPaymentCard("4012888888881881"))
+	fmt.Println(MatchPaymentCard("4012888888881881", Visa))
+	fmt.Println(MatchPaymentCard("4012888888881881", Mastercard))
+	fmt.Println(MatchPaymentCard("30037174022893"))
+	// Output:
+	// [Visa] <nil>
+	// [Visa] <nil>
+	// [] Payment card does not match any issuer
+	// [Dinner Club International Dinner Club Carte Blanche] <nil>
 }

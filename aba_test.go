@@ -1,6 +1,7 @@
 package mimir
 
 import (
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -130,4 +131,14 @@ func TestSplitABARTN(t *testing.T) {
 			)
 		}
 	}
+}
+
+// Examples
+
+func ExampleGetABARTNCheckDigit() {
+	fmt.Println(GetABARTNCheckDigit("111000020"))
+	fmt.Println(GetABARTNCheckDigit("111000025"))
+	// Output:
+	// 5 111000025 <nil>
+	// 5 111000025 <nil>
 }
