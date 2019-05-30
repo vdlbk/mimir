@@ -211,5 +211,5 @@ func ExampleMatchPaymentCard() {
 	// [Visa] <nil>
 	// [Visa] <nil>
 	// [] Payment card does not match any issuer
-	// [Dinner Club International Dinner Club Carte Blanche] <nil>
+	// [Dinner Club Carte Blanche Dinner Club International] <nil>
 }

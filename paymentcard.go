@@ -2,6 +2,7 @@ package mimir
 
 import (
 	"regexp"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -61,6 +62,7 @@ func MatchPaymentCard(number string, issuers ...string) ([]string, error) {
 		return nil, ErrPaymentCardDoesNotMatchAnyIssuer
 	}
 
+	sort.Strings(matches)
 	return matches, nil
 }
 
