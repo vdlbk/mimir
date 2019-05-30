@@ -48,6 +48,7 @@ All cards in the examples has been generated randomly
 | `MatchPaymentCard` | Validate a payment card number from a specific card issuer or not  |
 | `GetPaymentCardCheckDigits` | Compute or fix check digits from a payment card  |
 | `GetPaymentCardConfiguration` | Get payment cards information from an issuer  |
+| `FormatPaymentCard` | Format payment card based on its structure  |
 
 #### Supported cards
 

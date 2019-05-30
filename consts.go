@@ -28,6 +28,9 @@ const (
 
 	// ErrIssuerDoesNotExist is the error when you lookup for an issuer that does not exists
 	ErrIssuerDoesNotExist = mimirError("Issuer does not exist")
+
+	// ErrStructureNotFound is the error when you try to format a payment card which does not have supported structure
+	ErrStructureNotFound = mimirError("Structure not found")
 )
 
 type mimirError string

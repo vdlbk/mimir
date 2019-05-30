@@ -161,6 +161,37 @@ func TestGetPaymentCardCheckDigitsWithCustomValues(t *testing.T) {
 	}
 }
 
+// Tests FormatPaymentCard with custom values
+func TestFormatPaymentCard(t *testing.T) {
+	testCases := []struct {
+		input          string
+		issuer         string
+		expectedResult string
+		expectedErr    error
+	}{
+		{"4012888888881881", Visa, "4012 8888 8888 1881", nil},
+		{"4012888888881881", Mastercard, "4012 8888 8888 1881", nil},
+		{"377932215823195", AmericanExpress, "3779 322158 23195", nil},
+		{"4012888888881881", AmericanExpress, "", ErrStructureNotFound},
+	}
+
+	for i, testCase := range testCases {
+		result, err := FormatPaymentCard(testCase.input, testCase.issuer)
+
+		if err != nil && err != testCase.expectedErr {
+			t.Errorf("[%d] Unexpected error, FormatPaymentCard(%s, %s)= %v; want: %v.", i, testCase.input, testCase.issuer, err, testCase.expectedErr)
+		} else if result != testCase.expectedResult {
+			t.Errorf("[%d] Output was incorrect, FormatPaymentCard(%s, %s)= %v; want: %v.",
+				i,
+				testCase.input,
+				testCase.issuer,
+				result,
+				testCase.expectedResult,
+			)
+		}
+	}
+}
+
 // Examples
 
 func ExampleGetPaymentCardCheckDigits() {

@@ -80,6 +80,35 @@ func GetPaymentCardCheckDigits(number string) (string, string, error) {
 	return strconv.FormatInt(checksum, 10), number[:len(number)-1] + strconv.FormatInt(checksum, 10), nil
 }
 
+// FormatPaymentCard formats the given payment card based on the structure of the issuer.
+func FormatPaymentCard(number, issuer string) (string, error) {
+	conf, err := GetPaymentCardConfiguration(issuer)
+	if err != nil {
+		return "", err
+	}
+
+	number = sanitizeCardNumber(number)
+
+	format, ok := conf.Structure[len(number)]
+	if !ok {
+		return "", ErrStructureNotFound
+	}
+
+	result := ""
+	idx := 0
+	for _, c := range format {
+		if c == '#' {
+			result += string(number[idx])
+			idx++
+		} else {
+			result += string(c)
+		}
+	}
+
+	return result, nil
+
+}
+
 func sanitizeCardNumber(number string) string {
 	// Remove all spaces
 	return strings.Replace(number, " ", "", -1)
