@@ -1,4 +1,4 @@
-# Mimir &nbsp;[![Build Status](https://cloud.drone.io/api/badges/vdlbk/mimir/status.svg)](https://cloud.drone.io/vdlbk/mimir) [![Go Report Card](https://goreportcard.com/badge/github.com/vdlbk/mimir)](https://goreportcard.com/report/github.com/vdlbk/mimir)  [![GoDoc](https://godoc.org/github.com/vdlbk/mimir?status.svg)](https://godoc.org/github.com/vdlbk/mimir)
+# Mimir &nbsp; [![Go Report Card](https://goreportcard.com/badge/github.com/vdlbk/mimir)](https://goreportcard.com/report/github.com/vdlbk/mimir)  [![GoDoc](https://godoc.org/github.com/vdlbk/mimir?status.svg)](https://pkg.go.dev/github.com/vdlbk/mimir)
 
 ## What is Mimir ?
 
@@ -54,9 +54,9 @@ All cards in the examples has been generated randomly
 
 Please visit [SUPPORTED_CARDS.md](https://github.com/vdlbk/mimir/blob/master/SUPPORTED_CARDS.md)
 
-## Use
+## Usage
 
-### Get
+### Get / Install
 ```bash
 $ go get -u github.com/vdlbk/mimir
 ```
