@@ -1,7 +1,6 @@
 # Supported cards
 
-Note: It is quite painful to have reliable information about payment card pattern and length. So if something is not accurate, or complete.    
-Please do not hesitate to submit an issue, and we'll try to fix it as soon as possible.
+> Note: It is quite painful to have reliable information about payment card patterns and lengths. So if something is not accurate, or complete, please do not hesitate to submit an issue, and we'll try to fix it as soon as possible.
 
 | Constant name | FullName | Card Prefix | Length | 
 | ------------- | -------- | ----------- | ------ |
